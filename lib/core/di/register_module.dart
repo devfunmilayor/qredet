@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../network/dio_client.dart';
+import '../storage/hive_boxes.dart';
 
 @module
 abstract class RegisterModule {
@@ -9,5 +11,8 @@ abstract class RegisterModule {
   Dio get dio => buildDioClient();
 
   @preResolve
-  Future<SharedPreferences> get prefs => SharedPreferences.getInstance();
+  Future<Box<String>> get settingsBox => Hive.openBox<String>(HiveBoxes.settings);
+
+  @lazySingleton
+  FlutterSecureStorage get secureStorage => const FlutterSecureStorage();
 }

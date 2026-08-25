@@ -27,7 +27,9 @@ dependencies:
   intl: ^0.20.2
   fpdart: ^1.1.1
   flutter_svg: ^2.2.1
-  shared_preferences: ^2.5.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.2.4
 
 dev_dependencies:
   flutter_test:
@@ -39,6 +41,7 @@ dev_dependencies:
   injectable_generator: ^2.9.0
   bloc_test: ^10.0.0
   mocktail: ^1.0.4
+  flutter_gen_runner: ^5.11.0
 
 flutter:
   uses-material-design: true
@@ -48,3 +51,27 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/data/countries.json
+
+  fonts:
+    - family: Mona Sans
+      fonts:
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 200
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 300
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 400
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 500
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 600
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 700
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 800
+        - asset: assets/fonts/MonaSans-Variable.ttf
+          weight: 900
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 100
