@@ -1,7 +1,6 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/exception_mapper.dart';
-import '../../../../core/error/failure.dart';
+import '../../../../core/error/error.dart';
 import '../../domain/entities/language.dart';
 import '../../domain/repositories/language_repository.dart';
 import '../datasources/language_local_data_source.dart';

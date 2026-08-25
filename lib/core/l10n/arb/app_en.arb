@@ -11,5 +11,105 @@
   "selectLanguage": "Select language",
   "@selectLanguage": {
     "description": "Language picker sheet title"
+  },
+  "walletBalance": "Wallet Balance",
+  "@walletBalance": {
+    "description": "Wallet balance label"
+  },
+  "virtualAccount": "Virtual Account",
+  "@virtualAccount": {
+    "description": "Virtual account caption"
+  },
+  "upgradeAccountTitle": "Upgrade your account",
+  "@upgradeAccountTitle": {
+    "description": "Upgrade card title"
+  },
+  "upgradeAccountSubtitle": "Remove transaction and balance limits",
+  "@upgradeAccountSubtitle": {
+    "description": "Upgrade card subtitle"
+  },
+  "payments": "Payments",
+  "@payments": {
+    "description": "Transactions section header"
+  },
+  "seeAll": "See all",
+  "@seeAll": {
+    "description": "Transactions section action"
+  },
+  "makePayment": "Make payment",
+  "@makePayment": {
+    "description": "Bottom CTA button label"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button label"
+  },
+  "balanceErrorTitle": "Couldn't load balance",
+  "@balanceErrorTitle": {
+    "description": "Balance error state title"
+  },
+  "transactionsErrorTitle": "Couldn't load transactions",
+  "@transactionsErrorTitle": {
+    "description": "Transactions error state title"
+  },
+  "tryAgainMessage": "Check your connection and try again",
+  "@tryAgainMessage": {
+    "description": "Generic error state subtitle"
+  },
+  "transactionsEmptyTitle": "No transactions yet",
+  "@transactionsEmptyTitle": {
+    "description": "Transactions empty state title"
+  },
+  "transactionsEmptySubtitle": "Your recent payments will show up here",
+  "@transactionsEmptySubtitle": {
+    "description": "Transactions empty state subtitle"
+  },
+  "accountNumberCopied": "Account number copied",
+  "@accountNumberCopied": {
+    "description": "Toast shown after copying the virtual account number"
+  },
+  "upgradeTiersTitle": "Choose a plan",
+  "@upgradeTiersTitle": {
+    "description": "Upgrade tiers sheet title"
+  },
+  "planUpdated": "Plan updated",
+  "@planUpdated": {
+    "description": "Toast after picking a tier"
+  },
+  "allTransactions": "All transactions",
+  "@allTransactions": {
+    "description": "Transactions page title"
+  },
+  "searchTransactions": "Search transactions",
+  "@searchTransactions": {
+    "description": "Search field hint on transactions page"
+  },
+  "login": "Log in",
+  "@login": {
+    "description": "Login button/screen label"
+  },
+  "signUp": "Sign up",
+  "@signUp": {
+    "description": "Sign up button/screen label"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "continueAsGuest": "Continue as guest",
+  "@continueAsGuest": {
+    "description": "Guest login button label"
+  },
+  "noAccountSignUp": "Don't have an account? Sign up",
+  "@noAccountSignUp": {
+    "description": "Link from login to sign up"
+  },
+  "haveAccountLogin": "Already have an account? Log in",
+  "@haveAccountLogin": {
+    "description": "Link from sign up to login"
   }
 }

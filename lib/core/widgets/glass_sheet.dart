@@ -27,29 +27,33 @@ class GlassSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final maxHeight = MediaQuery.sizeOf(context).height * 0.65;
     return ClipRRect(
       borderRadius: const BorderRadius.vertical(top: Radius.circular(AppSpacing.sheetRadius)),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
-        child: Container(
-          padding: const EdgeInsets.all(AppSpacing.xxl),
-          decoration: BoxDecoration(color: colors.surfaceCard.withValues(alpha: 0.85)),
-          child: SafeArea(
-            top: false,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(title, style: AppTextStyles.sheetTitle.copyWith(color: colors.textPrimary)),
-                    TextButton(onPressed: onCancel, child: Text(AppLocalizations.of(context).cancel)),
-                  ],
-                ),
-                const SizedBox(height: AppSpacing.lg),
-                child,
-              ],
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: maxHeight),
+          child: Container(
+            padding: const EdgeInsets.all(AppSpacing.xxl),
+            decoration: BoxDecoration(color: colors.surfaceCard.withValues(alpha: 0.85)),
+            child: SafeArea(
+              top: false,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(title, style: AppTextStyles.sheetTitle.copyWith(color: colors.textPrimary)),
+                      TextButton(onPressed: onCancel, child: Text(AppLocalizations.of(context).cancel)),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.lg),
+                  Flexible(child: child),
+                ],
+              ),
             ),
           ),
         ),

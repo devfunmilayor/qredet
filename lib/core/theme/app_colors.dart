@@ -25,4 +25,5 @@ class AppColors {
   static const Color darkDivider = Color(0xFF2E293F);
   static const Color darkPrimaryPurple = Color(0xFF9B7BFF);
   static const Color darkError = Color(0xFFFF6B5B);
+  static const Color toastSuccess = Color(0xFF2E9B5C);
 }
