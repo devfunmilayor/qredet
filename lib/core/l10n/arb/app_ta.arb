@@ -3,5 +3,7 @@
   "appName": "Qredet",
   "@appName": {
     "description": "Application name"
-  }
+  },
+  "cancel": "ரத்து செய்",
+  "selectLanguage": "மொழியைத் தேர்ந்தெடுக்கவும்"
 }
