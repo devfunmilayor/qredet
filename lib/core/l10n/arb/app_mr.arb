@@ -1,0 +1,7 @@
+{
+  "@@locale": "mr",
+  "appName": "Qredet",
+  "@appName": {
+    "description": "Application name"
+  }
+}
