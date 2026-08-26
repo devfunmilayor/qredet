@@ -46,5 +46,16 @@
   "date": "Дата",
   "transactionType": "Тип",
   "debit": "Списание",
-  "credit": "Зачисление"
+  "credit": "Зачисление",
+  "notifTitlePaymentReceived": "Платёж получен",
+  "notifBodyPaymentReceived": "На ваш кошелёк поступил платёж",
+  "notifTitlePaymentSent": "Платёж отправлен",
+  "notifBodyPaymentSent": "Ваш платёж успешно отправлен",
+  "notifTitleUpgradeAvailable": "Доступно обновление",
+  "notifBodyUpgradeAvailable": "Перейдите на Premium, чтобы снять лимиты на операции",
+  "notifTitleSecurityAlert": "Оповещение безопасности",
+  "notifBodySecurityAlert": "Обнаружен новый вход в ваш аккаунт",
+  "notifTitleWeeklySummary": "Еженедельная сводка",
+  "notifBodyWeeklySummary": "Вот сводка ваших расходов за неделю",
+  "ubaBank": "UBA Bank"
 }

@@ -46,5 +46,16 @@
   "date": "Ngày",
   "transactionType": "Loại",
   "debit": "Ghi nợ",
-  "credit": "Ghi có"
+  "credit": "Ghi có",
+  "notifTitlePaymentReceived": "Đã nhận thanh toán",
+  "notifBodyPaymentReceived": "Bạn đã nhận được khoản thanh toán vào ví",
+  "notifTitlePaymentSent": "Đã gửi thanh toán",
+  "notifBodyPaymentSent": "Khoản thanh toán của bạn đã được gửi thành công",
+  "notifTitleUpgradeAvailable": "Có bản nâng cấp",
+  "notifBodyUpgradeAvailable": "Nâng cấp lên Premium để loại bỏ giới hạn giao dịch",
+  "notifTitleSecurityAlert": "Cảnh báo bảo mật",
+  "notifBodySecurityAlert": "Đã phát hiện đăng nhập mới vào tài khoản của bạn",
+  "notifTitleWeeklySummary": "Tóm tắt hàng tuần",
+  "notifBodyWeeklySummary": "Đây là tóm tắt chi tiêu của bạn trong tuần",
+  "ubaBank": "Ngân hàng UBA"
 }

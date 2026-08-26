@@ -46,5 +46,16 @@
   "date": "التاريخ",
   "transactionType": "النوع",
   "debit": "مدين",
-  "credit": "دائن"
+  "credit": "دائن",
+  "notifTitlePaymentReceived": "تم استلام الدفعة",
+  "notifBodyPaymentReceived": "لقد استلمت دفعة في محفظتك",
+  "notifTitlePaymentSent": "تم إرسال الدفعة",
+  "notifBodyPaymentSent": "تم إرسال دفعتك بنجاح",
+  "notifTitleUpgradeAvailable": "يتوفر ترقية",
+  "notifBodyUpgradeAvailable": "قم بالترقية إلى بريميوم لإزالة حدود المعاملات",
+  "notifTitleSecurityAlert": "تنبيه أمني",
+  "notifBodySecurityAlert": "تم اكتشاف تسجيل دخول جديد إلى حسابك",
+  "notifTitleWeeklySummary": "ملخص أسبوعي",
+  "notifBodyWeeklySummary": "إليك ملخص إنفاقك لهذا الأسبوع",
+  "ubaBank": "بنك UBA"
 }

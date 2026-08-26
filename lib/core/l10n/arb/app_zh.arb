@@ -46,5 +46,16 @@
   "date": "日期",
   "transactionType": "类型",
   "debit": "支出",
-  "credit": "收入"
+  "credit": "收入",
+  "notifTitlePaymentReceived": "已收款",
+  "notifBodyPaymentReceived": "您的钱包收到一笔付款",
+  "notifTitlePaymentSent": "已付款",
+  "notifBodyPaymentSent": "您的付款已成功发送",
+  "notifTitleUpgradeAvailable": "可以升级",
+  "notifBodyUpgradeAvailable": "升级到高级版以取消交易限制",
+  "notifTitleSecurityAlert": "安全警报",
+  "notifBodySecurityAlert": "检测到您的账户有新登录",
+  "notifTitleWeeklySummary": "每周摘要",
+  "notifBodyWeeklySummary": "这是您本周的支出摘要",
+  "ubaBank": "UBA Bank"
 }

@@ -46,5 +46,16 @@
   "date": "தேதி",
   "transactionType": "வகை",
   "debit": "பற்று",
-  "credit": "வரவு"
+  "credit": "வரவு",
+  "notifTitlePaymentReceived": "பணம் பெறப்பட்டது",
+  "notifBodyPaymentReceived": "உங்கள் வாலட்டில் பணம் பெறப்பட்டது",
+  "notifTitlePaymentSent": "பணம் அனுப்பப்பட்டது",
+  "notifBodyPaymentSent": "உங்கள் பணம் வெற்றிகரமாக அனுப்பப்பட்டது",
+  "notifTitleUpgradeAvailable": "மேம்படுத்தல் கிடைக்கிறது",
+  "notifBodyUpgradeAvailable": "பரிவர்த்தனை வரம்புகளை அகற்ற பிரீமியத்திற்கு மேம்படுத்தவும்",
+  "notifTitleSecurityAlert": "பாதுகாப்பு எச்சரிக்கை",
+  "notifBodySecurityAlert": "உங்கள் கணக்கில் புதிய உள்நுழைவு கண்டறியப்பட்டது",
+  "notifTitleWeeklySummary": "வாராந்திர சுருக்கம்",
+  "notifBodyWeeklySummary": "இது இந்த வாரத்திற்கான உங்கள் செலவு சுருக்கம்",
+  "ubaBank": "யுபிஏ வங்கி"
 }

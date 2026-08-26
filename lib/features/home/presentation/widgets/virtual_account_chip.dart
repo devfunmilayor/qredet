@@ -28,7 +28,10 @@ class VirtualAccountChip extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(account.bankName, style: AppTextStyles.chipBankName.copyWith(color: colors.textPrimary)),
+          Text(
+            AppLocalizations.of(context).ubaBank,
+            style: AppTextStyles.chipBankName.copyWith(color: colors.textPrimary),
+          ),
           const SizedBox(width: AppSpacing.md),
           Text(
             account.accountNumber,

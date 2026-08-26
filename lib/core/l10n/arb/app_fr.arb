@@ -46,5 +46,16 @@
   "date": "Date",
   "transactionType": "Type",
   "debit": "Débit",
-  "credit": "Crédit"
+  "credit": "Crédit",
+  "notifTitlePaymentReceived": "Paiement reçu",
+  "notifBodyPaymentReceived": "Vous avez reçu un paiement sur votre portefeuille",
+  "notifTitlePaymentSent": "Paiement envoyé",
+  "notifBodyPaymentSent": "Votre paiement a été envoyé avec succès",
+  "notifTitleUpgradeAvailable": "Mise à niveau disponible",
+  "notifBodyUpgradeAvailable": "Passez à Premium pour supprimer les limites de transaction",
+  "notifTitleSecurityAlert": "Alerte de sécurité",
+  "notifBodySecurityAlert": "Une nouvelle connexion à votre compte a été détectée",
+  "notifTitleWeeklySummary": "Résumé hebdomadaire",
+  "notifBodyWeeklySummary": "Voici votre résumé de dépenses pour la semaine",
+  "ubaBank": "UBA Bank"
 }

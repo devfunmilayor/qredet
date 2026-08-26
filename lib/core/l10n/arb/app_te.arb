@@ -46,5 +46,16 @@
   "date": "తేదీ",
   "transactionType": "రకం",
   "debit": "డెబిట్",
-  "credit": "క్రెడిట్"
+  "credit": "క్రెడిట్",
+  "notifTitlePaymentReceived": "చెల్లింపు అందుకున్నారు",
+  "notifBodyPaymentReceived": "మీ వాలెట్‌లోకి చెల్లింపు వచ్చింది",
+  "notifTitlePaymentSent": "చెల్లింపు పంపబడింది",
+  "notifBodyPaymentSent": "మీ చెల్లింపు విజయవంతంగా పంపబడింది",
+  "notifTitleUpgradeAvailable": "అప్‌గ్రేడ్ అందుబాటులో ఉంది",
+  "notifBodyUpgradeAvailable": "లావాదేవీ పరిమితులను తీసివేయడానికి ప్రీమియంకి అప్‌గ్రేడ్ చేయండి",
+  "notifTitleSecurityAlert": "భద్రతా హెచ్చరిక",
+  "notifBodySecurityAlert": "మీ ఖాతాలో కొత్త లాగిన్ గుర్తించబడింది",
+  "notifTitleWeeklySummary": "వారపు సారాంశం",
+  "notifBodyWeeklySummary": "ఇదిగో ఈ వారానికి మీ ఖర్చు సారాంశం",
+  "ubaBank": "యుబిఎ బ్యాంక్"
 }
