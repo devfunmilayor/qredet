@@ -1,17 +1,25 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fpdart/fpdart.dart';
+import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:qredet/core/error/failure.dart';
 import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
 import 'package:qredet/features/notifications/domain/entities/notifications_page.dart';
+import 'package:qredet/features/notifications/domain/usecases/delete_notification.dart';
 import 'package:qredet/features/notifications/domain/usecases/get_notifications.dart';
+import 'package:qredet/features/notifications/domain/usecases/mark_notification_read.dart';
 import 'package:qredet/features/notifications/presentation/bloc/notifications_bloc.dart';
 import 'package:qredet/features/notifications/presentation/bloc/notifications_event.dart';
 import 'package:qredet/features/notifications/presentation/bloc/notifications_state.dart';
 
-import '../../notifications_mocks.mocks.dart';
+import 'notifications_bloc_test.mocks.dart';
 
+@GenerateNiceMocks([
+  MockSpec<GetNotifications>(),
+  MockSpec<DeleteNotification>(),
+  MockSpec<MarkNotificationRead>(),
+])
 void main() {
   late MockGetNotifications getNotifications;
   late MockDeleteNotification deleteNotification;

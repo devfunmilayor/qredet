@@ -1,13 +1,16 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fpdart/fpdart.dart';
+import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:qredet/core/error/failure.dart';
 import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
 import 'package:qredet/features/notifications/domain/entities/notifications_page.dart';
+import 'package:qredet/features/notifications/domain/repositories/notifications_repository.dart';
 import 'package:qredet/features/notifications/domain/usecases/get_notifications.dart';
 
-import '../../notifications_mocks.mocks.dart';
+import 'get_notifications_test.mocks.dart';
 
+@GenerateNiceMocks([MockSpec<NotificationsRepository>()])
 void main() {
   late MockNotificationsRepository repository;
   late GetNotifications usecase;
