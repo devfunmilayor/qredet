@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-class UpgradeTier extends Equatable {
-  const UpgradeTier({required this.name, required this.price, required this.limitDescription});
+enum UpgradeTierType { basic, standard, premium }
 
-  final String name;
-  final String price;
-  final String limitDescription;
+class UpgradeTier extends Equatable {
+  const UpgradeTier({required this.type});
+
+  final UpgradeTierType type;
 
   @override
-  List<Object?> get props => [name, price, limitDescription];
+  List<Object?> get props => [type];
 }

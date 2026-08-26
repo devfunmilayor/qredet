@@ -12,5 +12,6 @@ class LoginAsGuest implements UseCase<AppUser, NoParams> {
   final AuthRepository _repository;
 
   @override
-  Future<Either<Failure, AppUser>> call(NoParams params) => _repository.loginAsGuest();
+  Future<Either<Failure, AppUser>> call(NoParams params) =>
+      _repository.loginAsGuest();
 }

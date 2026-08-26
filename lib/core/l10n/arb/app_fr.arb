@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Une nouvelle connexion à votre compte a été détectée",
   "notifTitleWeeklySummary": "Résumé hebdomadaire",
   "notifBodyWeeklySummary": "Voici votre résumé de dépenses pour la semaine",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "Basique",
+  "tierBasicPrice": "Gratuit",
+  "tierBasicLimit": "Limite mensuelle de 50.000F",
+  "tierStandardName": "Standard",
+  "tierStandardPrice": "2.000F/mois",
+  "tierStandardLimit": "Limite mensuelle de 500.000F",
+  "tierPremiumName": "Premium",
+  "tierPremiumPrice": "5.000F/mois",
+  "tierPremiumLimit": "Aucune limite de transaction ni de solde"
 }

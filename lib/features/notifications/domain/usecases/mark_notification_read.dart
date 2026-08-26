@@ -11,5 +11,6 @@ class MarkNotificationRead implements UseCase<Unit, String> {
   final NotificationsRepository _repository;
 
   @override
-  Future<Either<Failure, Unit>> call(String params) => _repository.markAsRead(params);
+  Future<Either<Failure, Unit>> call(String params) =>
+      _repository.markAsRead(params);
 }

@@ -7,5 +7,6 @@ sealed class NotificationsEvent with _$NotificationsEvent {
   const factory NotificationsEvent.started() = NotificationsStarted;
   const factory NotificationsEvent.moreRequested() = NotificationsMoreRequested;
   const factory NotificationsEvent.deleted(String id) = NotificationDeleted;
-  const factory NotificationsEvent.markedRead(String id) = NotificationMarkedRead;
+  const factory NotificationsEvent.markedRead(String id) =
+      NotificationMarkedRead;
 }

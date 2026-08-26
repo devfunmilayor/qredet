@@ -4,7 +4,9 @@ import 'failure.dart';
 
 Failure mapExceptionToFailure(Object error) {
   if (error is DioException) return _mapDioException(error);
-  if (error is FirebaseAuthException) return Failure.server(error.message ?? error.code);
+  if (error is FirebaseAuthException) {
+    return Failure.server(error.message ?? error.code);
+  }
   if (error is Failure) return error;
   return Failure.unknown(error.toString().replaceFirst('Exception: ', ''));
 }

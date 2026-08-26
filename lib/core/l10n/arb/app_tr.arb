@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Hesabınıza yeni bir giriş algılandı",
   "notifTitleWeeklySummary": "Haftalık özet",
   "notifBodyWeeklySummary": "İşte bu haftaki harcama özetiniz",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "Temel",
+  "tierBasicPrice": "Ücretsiz",
+  "tierBasicLimit": "Aylık limit 50.000F",
+  "tierStandardName": "Standart",
+  "tierStandardPrice": "2.000F/ay",
+  "tierStandardLimit": "Aylık limit 500.000F",
+  "tierPremiumName": "Premium",
+  "tierPremiumPrice": "5.000F/ay",
+  "tierPremiumLimit": "İşlem veya bakiye sınırı yok"
 }

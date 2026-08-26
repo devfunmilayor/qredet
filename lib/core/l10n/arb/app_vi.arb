@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Đã phát hiện đăng nhập mới vào tài khoản của bạn",
   "notifTitleWeeklySummary": "Tóm tắt hàng tuần",
   "notifBodyWeeklySummary": "Đây là tóm tắt chi tiêu của bạn trong tuần",
-  "ubaBank": "Ngân hàng UBA"
+  "ubaBank": "Ngân hàng UBA",
+  "tierBasicName": "Cơ bản",
+  "tierBasicPrice": "Miễn phí",
+  "tierBasicLimit": "Giới hạn hàng tháng 50.000F",
+  "tierStandardName": "Tiêu chuẩn",
+  "tierStandardPrice": "2.000F/tháng",
+  "tierStandardLimit": "Giới hạn hàng tháng 500.000F",
+  "tierPremiumName": "Premium",
+  "tierPremiumPrice": "5.000F/tháng",
+  "tierPremiumLimit": "Không giới hạn giao dịch hoặc số dư"
 }

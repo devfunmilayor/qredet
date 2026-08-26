@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Обнаружен новый вход в ваш аккаунт",
   "notifTitleWeeklySummary": "Еженедельная сводка",
   "notifBodyWeeklySummary": "Вот сводка ваших расходов за неделю",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "Базовый",
+  "tierBasicPrice": "Бесплатно",
+  "tierBasicLimit": "Месячный лимит 50.000F",
+  "tierStandardName": "Стандарт",
+  "tierStandardPrice": "2.000F/мес",
+  "tierStandardLimit": "Месячный лимит 500.000F",
+  "tierPremiumName": "Премиум",
+  "tierPremiumPrice": "5.000F/мес",
+  "tierPremiumLimit": "Без лимитов на операции и баланс"
 }

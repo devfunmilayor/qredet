@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "アカウントへの新しいログインが検出されました",
   "notifTitleWeeklySummary": "週間サマリー",
   "notifBodyWeeklySummary": "今週の支出サマリーです",
-  "ubaBank": "UBA銀行"
+  "ubaBank": "UBA銀行",
+  "tierBasicName": "ベーシック",
+  "tierBasicPrice": "無料",
+  "tierBasicLimit": "月間限度額 50.000F",
+  "tierStandardName": "スタンダード",
+  "tierStandardPrice": "2.000F/月",
+  "tierStandardLimit": "月間限度額 500.000F",
+  "tierPremiumName": "プレミアム",
+  "tierPremiumPrice": "5.000F/月",
+  "tierPremiumLimit": "取引・残高の制限なし"
 }

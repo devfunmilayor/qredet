@@ -219,5 +219,41 @@
   "ubaBank": "UBA Bank",
   "@ubaBank": {
     "description": "Mock bank name shown on the virtual account chip and payment details"
+  },
+  "tierBasicName": "Basic",
+  "@tierBasicName": {
+    "description": "Basic tier name"
+  },
+  "tierBasicPrice": "Free",
+  "@tierBasicPrice": {
+    "description": "Basic tier price"
+  },
+  "tierBasicLimit": "50.000F monthly limit",
+  "@tierBasicLimit": {
+    "description": "Basic tier limit description"
+  },
+  "tierStandardName": "Standard",
+  "@tierStandardName": {
+    "description": "Standard tier name"
+  },
+  "tierStandardPrice": "2.000F/mo",
+  "@tierStandardPrice": {
+    "description": "Standard tier price"
+  },
+  "tierStandardLimit": "500.000F monthly limit",
+  "@tierStandardLimit": {
+    "description": "Standard tier limit description"
+  },
+  "tierPremiumName": "Premium",
+  "@tierPremiumName": {
+    "description": "Premium tier name"
+  },
+  "tierPremiumPrice": "5.000F/mo",
+  "@tierPremiumPrice": {
+    "description": "Premium tier price"
+  },
+  "tierPremiumLimit": "No transaction or balance limits",
+  "@tierPremiumLimit": {
+    "description": "Premium tier limit description"
   }
 }

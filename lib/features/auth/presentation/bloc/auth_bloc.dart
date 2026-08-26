@@ -13,8 +13,13 @@ import 'auth_state.dart';
 
 @singleton
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
-  AuthBloc(this._login, this._signUp, this._loginAsGuest, this._logout, this._watchAuthState)
-      : super(const AuthState.unknown()) {
+  AuthBloc(
+    this._login,
+    this._signUp,
+    this._loginAsGuest,
+    this._logout,
+    this._watchAuthState,
+  ) : super(const AuthState.unknown()) {
     on<AuthCheckRequested>(_onCheckRequested);
     on<AuthUserChanged>(_onUserChanged);
     on<LoginSubmitted>(_onLoginSubmitted);
@@ -30,28 +35,50 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final WatchAuthState _watchAuthState;
   StreamSubscription<AppUser?>? _authSub;
 
-  Future<void> _onCheckRequested(AuthCheckRequested event, Emitter<AuthState> emit) async {
+  Future<void> _onCheckRequested(
+    AuthCheckRequested event,
+    Emitter<AuthState> emit,
+  ) async {
     await _authSub?.cancel();
-    _authSub = _watchAuthState().listen((user) => add(AuthEvent.userChanged(user)));
+    _authSub = _watchAuthState().listen(
+      (user) => add(AuthEvent.userChanged(user)),
+    );
   }
 
   void _onUserChanged(AuthUserChanged event, Emitter<AuthState> emit) {
-    emit(event.user == null ? const AuthState.unauthenticated() : AuthState.authenticated(event.user!));
+    emit(
+      event.user == null
+          ? const AuthState.unauthenticated()
+          : AuthState.authenticated(event.user!),
+    );
   }
 
-  Future<void> _onLoginSubmitted(LoginSubmitted event, Emitter<AuthState> emit) async {
+  Future<void> _onLoginSubmitted(
+    LoginSubmitted event,
+    Emitter<AuthState> emit,
+  ) async {
     emit(const AuthState.authenticating());
-    final result = await _login(LoginParams(email: event.email, password: event.password));
+    final result = await _login(
+      LoginParams(email: event.email, password: event.password),
+    );
     result.match((failure) => emit(AuthState.error(failure)), (_) {});
   }
 
-  Future<void> _onSignUpSubmitted(SignUpSubmitted event, Emitter<AuthState> emit) async {
+  Future<void> _onSignUpSubmitted(
+    SignUpSubmitted event,
+    Emitter<AuthState> emit,
+  ) async {
     emit(const AuthState.authenticating());
-    final result = await _signUp(LoginParams(email: event.email, password: event.password));
+    final result = await _signUp(
+      LoginParams(email: event.email, password: event.password),
+    );
     result.match((failure) => emit(AuthState.error(failure)), (_) {});
   }
 
-  Future<void> _onGuestLoginRequested(GuestLoginRequested event, Emitter<AuthState> emit) async {
+  Future<void> _onGuestLoginRequested(
+    GuestLoginRequested event,
+    Emitter<AuthState> emit,
+  ) async {
     emit(const AuthState.authenticating());
     final result = await _loginAsGuest(const NoParams());
     result.match((failure) => emit(AuthState.error(failure)), (_) {});

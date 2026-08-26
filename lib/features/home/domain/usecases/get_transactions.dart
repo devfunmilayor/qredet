@@ -17,13 +17,17 @@ class GetTransactionsParams extends Equatable {
 }
 
 @lazySingleton
-class GetTransactions implements UseCase<TransactionsPage, GetTransactionsParams> {
+class GetTransactions
+    implements UseCase<TransactionsPage, GetTransactionsParams> {
   const GetTransactions(this._repository);
 
   final HomeRepository _repository;
 
   @override
   Future<Either<Failure, TransactionsPage>> call(GetTransactionsParams params) {
-    return _repository.getTransactions(page: params.page, pageSize: params.pageSize);
+    return _repository.getTransactions(
+      page: params.page,
+      pageSize: params.pageSize,
+    );
   }
 }

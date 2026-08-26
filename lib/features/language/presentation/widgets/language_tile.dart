@@ -3,7 +3,12 @@ import '../../../../core/theme/theme.dart';
 import '../../domain/entities/language.dart';
 
 class LanguageTile extends StatelessWidget {
-  const LanguageTile({super.key, required this.language, required this.selected, required this.onTap});
+  const LanguageTile({
+    super.key,
+    required this.language,
+    required this.selected,
+    required this.onTap,
+  });
 
   final Language language;
   final bool selected;
@@ -16,13 +21,21 @@ class LanguageTile extends StatelessWidget {
       onTap: onTap,
       borderRadius: BorderRadius.circular(AppSpacing.md),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: AppSpacing.md, horizontal: AppSpacing.sm),
+        padding: const EdgeInsets.symmetric(
+          vertical: AppSpacing.md,
+          horizontal: AppSpacing.sm,
+        ),
         child: Row(
           children: [
-            Text(language.flagEmoji, style: const TextStyle(fontSize: 22)),
+            Text(language.flagEmoji, style: const TextStyle(fontSize: 20.5)),
             const SizedBox(width: AppSpacing.md),
             Expanded(
-              child: Text(language.label, style: AppTextStyles.pillLabel.copyWith(color: colors.textPrimary)),
+              child: Text(
+                language.label,
+                style: AppTextStyles.pillLabel.copyWith(
+                  color: colors.textPrimary,
+                ),
+              ),
             ),
             if (selected) Icon(Icons.check_circle, color: colors.primary),
           ],

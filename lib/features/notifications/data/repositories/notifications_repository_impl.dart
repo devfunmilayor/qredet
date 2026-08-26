@@ -7,7 +7,8 @@ import '../../domain/repositories/notifications_repository.dart';
 
 @LazySingleton(as: NotificationsRepository)
 class NotificationsRepositoryImpl implements NotificationsRepository {
-  NotificationsRepositoryImpl() : _items = List.generate(26, _mockNotificationAt);
+  NotificationsRepositoryImpl()
+    : _items = List.generate(26, _mockNotificationAt);
 
   final List<NotificationItem> _items;
 
@@ -15,18 +16,34 @@ class NotificationsRepositoryImpl implements NotificationsRepository {
     return NotificationItem(
       id: 'notif_$index',
       type: NotificationType.values[index % NotificationType.values.length],
-      timestamp: DateTime(2025, 5, 21, 16, 1).subtract(Duration(hours: index * 7)),
+      timestamp: DateTime(
+        2025,
+        5,
+        21,
+        16,
+        1,
+      ).subtract(Duration(hours: index * 7)),
       isRead: index % 3 == 0,
     );
   }
 
   @override
-  Future<Either<Failure, NotificationsPage>> getNotifications({required int page, required int pageSize}) async {
+  Future<Either<Failure, NotificationsPage>> getNotifications({
+    required int page,
+    required int pageSize,
+  }) async {
     await Future<void>.delayed(const Duration(milliseconds: 500));
     final start = (page - 1) * pageSize;
-    if (start >= _items.length) return const Right(NotificationsPage(items: [], hasMore: false));
+    if (start >= _items.length) {
+      return const Right(NotificationsPage(items: [], hasMore: false));
+    }
     final end = (start + pageSize).clamp(0, _items.length);
-    return Right(NotificationsPage(items: _items.sublist(start, end), hasMore: end < _items.length));
+    return Right(
+      NotificationsPage(
+        items: _items.sublist(start, end),
+        hasMore: end < _items.length,
+      ),
+    );
   }
 
   @override

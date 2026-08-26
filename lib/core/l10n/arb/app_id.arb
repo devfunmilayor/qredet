@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Login baru ke akun Anda terdeteksi",
   "notifTitleWeeklySummary": "Ringkasan mingguan",
   "notifBodyWeeklySummary": "Berikut ringkasan pengeluaran Anda minggu ini",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "Basic",
+  "tierBasicPrice": "Gratis",
+  "tierBasicLimit": "Batas bulanan 50.000F",
+  "tierStandardName": "Standard",
+  "tierStandardPrice": "2.000F/bln",
+  "tierStandardLimit": "Batas bulanan 500.000F",
+  "tierPremiumName": "Premium",
+  "tierPremiumPrice": "5.000F/bln",
+  "tierPremiumLimit": "Tanpa batas transaksi atau saldo"
 }

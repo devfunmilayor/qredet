@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "तुमच्या खात्यात नवीन लॉगिन आढळले",
   "notifTitleWeeklySummary": "साप्ताहिक सारांश",
   "notifBodyWeeklySummary": "हा आठवड्याचा तुमचा खर्च सारांश आहे",
-  "ubaBank": "यूबीए बँक"
+  "ubaBank": "यूबीए बँक",
+  "tierBasicName": "बेसिक",
+  "tierBasicPrice": "मोफत",
+  "tierBasicLimit": "50.000F मासिक मर्यादा",
+  "tierStandardName": "स्टँडर्ड",
+  "tierStandardPrice": "2.000F/महिना",
+  "tierStandardLimit": "500.000F मासिक मर्यादा",
+  "tierPremiumName": "प्रीमियम",
+  "tierPremiumPrice": "5.000F/महिना",
+  "tierPremiumLimit": "व्यवहार किंवा शिल्लक मर्यादा नाही"
 }

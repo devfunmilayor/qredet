@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'error_interceptor.dart';
 
-
 const String _baseUrl = 'https://api.qredet.dev';
 
 Dio buildDioClient() {

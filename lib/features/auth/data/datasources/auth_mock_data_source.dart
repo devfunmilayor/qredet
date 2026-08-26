@@ -17,19 +17,35 @@ class AuthMockDataSource implements AuthDataSource {
   }
 
   @override
-  Future<AppUser> login({required String email, required String password}) async {
+  Future<AppUser> login({
+    required String email,
+    required String password,
+  }) async {
     await Future<void>.delayed(const Duration(milliseconds: 500));
     if (password.length < 6) throw Exception('Incorrect email or password');
-    final user = AppUser(uid: 'mock_${_nextUid++}', email: email, isAnonymous: false);
+    final user = AppUser(
+      uid: 'mock_${_nextUid++}',
+      email: email,
+      isAnonymous: false,
+    );
     _emit(user);
     return user;
   }
 
   @override
-  Future<AppUser> signUp({required String email, required String password}) async {
+  Future<AppUser> signUp({
+    required String email,
+    required String password,
+  }) async {
     await Future<void>.delayed(const Duration(milliseconds: 500));
-    if (password.length < 6) throw Exception('Password must be at least 6 characters');
-    final user = AppUser(uid: 'mock_${_nextUid++}', email: email, isAnonymous: false);
+    if (password.length < 6) {
+      throw Exception('Password must be at least 6 characters');
+    }
+    final user = AppUser(
+      uid: 'mock_${_nextUid++}',
+      email: email,
+      isAnonymous: false,
+    );
     _emit(user);
     return user;
   }

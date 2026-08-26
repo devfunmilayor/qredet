@@ -12,5 +12,6 @@ class GetLanguages implements UseCase<List<Language>, NoParams> {
   final LanguageRepository _repository;
 
   @override
-  Future<Either<Failure, List<Language>>> call(NoParams params) => _repository.getLanguages();
+  Future<Either<Failure, List<Language>>> call(NoParams params) =>
+      _repository.getLanguages();
 }

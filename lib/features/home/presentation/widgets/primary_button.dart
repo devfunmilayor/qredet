@@ -37,9 +37,17 @@ class PrimaryButton extends StatelessWidget {
                 ? SizedBox(
                     width: 20,
                     height: 20,
-                    child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary),
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: colors.primary,
+                    ),
                   )
-                : Text(label, style: AppTextStyles.buttonLabel.copyWith(color: colors.textPrimary)),
+                : Text(
+                    label,
+                    style: AppTextStyles.buttonLabel.copyWith(
+                      color: colors.textPrimary,
+                    ),
+                  ),
           ),
         ),
       );
@@ -54,7 +62,12 @@ class PrimaryButton extends StatelessWidget {
           children: [
             Positioned.fill(
               top: 4,
-              child: DecoratedBox(decoration: BoxDecoration(color: colors.primaryPressed, borderRadius: radius)),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: colors.primaryPressed,
+                  borderRadius: radius,
+                ),
+              ),
             ),
             Positioned.fill(
               bottom: 4,
@@ -69,9 +82,17 @@ class PrimaryButton extends StatelessWidget {
                         ? SizedBox(
                             width: 20,
                             height: 20,
-                            child: CircularProgressIndicator(strokeWidth: 2, color: colors.textOnPrimary),
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              color: colors.textOnPrimary,
+                            ),
                           )
-                        : Text(label, style: AppTextStyles.buttonLabel.copyWith(color: colors.textOnPrimary)),
+                        : Text(
+                            label,
+                            style: AppTextStyles.buttonLabel.copyWith(
+                              color: colors.textOnPrimary,
+                            ),
+                          ),
                   ),
                 ),
               ),

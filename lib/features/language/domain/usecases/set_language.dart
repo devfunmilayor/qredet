@@ -12,5 +12,6 @@ class SetLanguage implements UseCase<Language, Language> {
   final LanguageRepository _repository;
 
   @override
-  Future<Either<Failure, Language>> call(Language params) => _repository.setLanguage(params);
+  Future<Either<Failure, Language>> call(Language params) =>
+      _repository.setLanguage(params);
 }

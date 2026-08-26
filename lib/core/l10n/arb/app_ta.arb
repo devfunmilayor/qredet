@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "உங்கள் கணக்கில் புதிய உள்நுழைவு கண்டறியப்பட்டது",
   "notifTitleWeeklySummary": "வாராந்திர சுருக்கம்",
   "notifBodyWeeklySummary": "இது இந்த வாரத்திற்கான உங்கள் செலவு சுருக்கம்",
-  "ubaBank": "யுபிஏ வங்கி"
+  "ubaBank": "யுபிஏ வங்கி",
+  "tierBasicName": "அடிப்படை",
+  "tierBasicPrice": "இலவசம்",
+  "tierBasicLimit": "மாதாந்திர வரம்பு 50.000F",
+  "tierStandardName": "நிலையான",
+  "tierStandardPrice": "2.000F/மாதம்",
+  "tierStandardLimit": "மாதாந்திர வரம்பு 500.000F",
+  "tierPremiumName": "பிரீமியம்",
+  "tierPremiumPrice": "5.000F/மாதம்",
+  "tierPremiumLimit": "பரிவர்த்தனை அல்லது இருப்பு வரம்பு இல்லை"
 }

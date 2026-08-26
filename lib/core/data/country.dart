@@ -9,11 +9,11 @@ class Country extends Equatable {
   });
 
   factory Country.fromJson(Map<String, dynamic> json) => Country(
-        name: json['country_name'] as String,
-        dialCode: json['country_code'] as String,
-        flag: json['flag'] as String,
-        phoneNumberLength: json['phone_number_length'] as int,
-      );
+    name: json['country_name'] as String,
+    dialCode: json['country_code'] as String,
+    flag: json['flag'] as String,
+    phoneNumberLength: json['phone_number_length'] as int,
+  );
 
   final String name;
   final String dialCode;

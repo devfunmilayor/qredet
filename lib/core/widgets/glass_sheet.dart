@@ -6,13 +6,21 @@ import '../theme/app_spacing.dart';
 import '../theme/app_text_styles.dart';
 
 class GlassSheet extends StatelessWidget {
-  const GlassSheet({super.key, required this.title, required this.child, required this.onCancel});
+  const GlassSheet({
+    super.key,
+    required this.title,
+    required this.child,
+    required this.onCancel,
+  });
 
   final String title;
   final Widget child;
   final VoidCallback onCancel;
 
-  static Future<T?> show<T>(BuildContext context, {required WidgetBuilder builder}) {
+  static Future<T?> show<T>(
+    BuildContext context, {
+    required WidgetBuilder builder,
+  }) {
     return showModalBottomSheet<T>(
       context: context,
       isScrollControlled: true,
@@ -26,14 +34,18 @@ class GlassSheet extends StatelessWidget {
     final colors = context.colors;
     final maxHeight = MediaQuery.sizeOf(context).height * 0.65;
     return ClipRRect(
-      borderRadius: const BorderRadius.vertical(top: Radius.circular(AppSpacing.sheetRadius)),
+      borderRadius: const BorderRadius.vertical(
+        top: Radius.circular(AppSpacing.sheetRadius),
+      ),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
         child: ConstrainedBox(
           constraints: BoxConstraints(maxHeight: maxHeight),
           child: Container(
             padding: const EdgeInsets.all(AppSpacing.xxl),
-            decoration: BoxDecoration(color: colors.surfaceCard.withValues(alpha: 0.85)),
+            decoration: BoxDecoration(
+              color: colors.surfaceCard.withValues(alpha: 0.85),
+            ),
             child: SafeArea(
               top: false,
               child: Column(
@@ -43,8 +55,16 @@ class GlassSheet extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(title, style: AppTextStyles.sheetTitle.copyWith(color: colors.textPrimary)),
-                      TextButton(onPressed: onCancel, child: Text(AppLocalizations.of(context).cancel)),
+                      Text(
+                        title,
+                        style: AppTextStyles.sheetTitle.copyWith(
+                          color: colors.textPrimary,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: onCancel,
+                        child: Text(AppLocalizations.of(context).cancel),
+                      ),
                     ],
                   ),
                   const SizedBox(height: AppSpacing.lg),

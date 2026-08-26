@@ -17,11 +17,18 @@ class NotificationBell extends StatelessWidget {
       child: Container(
         width: 44,
         height: 44,
-        decoration: BoxDecoration(color: colors.surfaceAvatar, shape: BoxShape.circle),
+        decoration: BoxDecoration(
+          color: colors.surfaceAvatar,
+          shape: BoxShape.circle,
+        ),
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Icon(Icons.notifications_outlined, color: colors.textPrimary, size: 20),
+            Icon(
+              Icons.notifications_outlined,
+              color: colors.textPrimary,
+              size: 20,
+            ),
             if (hasUnread)
               Positioned(
                 top: 10,
@@ -29,7 +36,10 @@ class NotificationBell extends StatelessWidget {
                 child: Container(
                   width: 8,
                   height: 8,
-                  decoration: BoxDecoration(color: colors.error, shape: BoxShape.circle),
+                  decoration: BoxDecoration(
+                    color: colors.error,
+                    shape: BoxShape.circle,
+                  ),
                 ),
               ),
           ],

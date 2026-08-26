@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "आपके खाते में एक नई लॉगिन का पता चला",
   "notifTitleWeeklySummary": "साप्ताहिक सारांश",
   "notifBodyWeeklySummary": "यह इस सप्ताह का आपका खर्च सारांश है",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "बेसिक",
+  "tierBasicPrice": "मुफ़्त",
+  "tierBasicLimit": "50.000F मासिक सीमा",
+  "tierStandardName": "स्टैंडर्ड",
+  "tierStandardPrice": "2.000F/माह",
+  "tierStandardLimit": "500.000F मासिक सीमा",
+  "tierPremiumName": "प्रीमियम",
+  "tierPremiumPrice": "5.000F/माह",
+  "tierPremiumLimit": "कोई लेनदेन या शेष राशि सीमा नहीं"
 }

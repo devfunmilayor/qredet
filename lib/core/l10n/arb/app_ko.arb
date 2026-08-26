@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "계정에 새 로그인이 감지되었습니다",
   "notifTitleWeeklySummary": "주간 요약",
   "notifBodyWeeklySummary": "이번 주 지출 요약입니다",
-  "ubaBank": "UBA 은행"
+  "ubaBank": "UBA 은행",
+  "tierBasicName": "베이직",
+  "tierBasicPrice": "무료",
+  "tierBasicLimit": "월 한도 50.000F",
+  "tierStandardName": "스탠다드",
+  "tierStandardPrice": "2.000F/월",
+  "tierStandardLimit": "월 한도 500.000F",
+  "tierPremiumName": "프리미엄",
+  "tierPremiumPrice": "5.000F/월",
+  "tierPremiumLimit": "거래 또는 잔액 한도 없음"
 }

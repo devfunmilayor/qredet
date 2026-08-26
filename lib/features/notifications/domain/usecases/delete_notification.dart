@@ -11,5 +11,6 @@ class DeleteNotification implements UseCase<Unit, String> {
   final NotificationsRepository _repository;
 
   @override
-  Future<Either<Failure, Unit>> call(String params) => _repository.deleteNotification(params);
+  Future<Either<Failure, Unit>> call(String params) =>
+      _repository.deleteNotification(params);
 }

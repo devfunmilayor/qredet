@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "آپ کے اکاؤنٹ میں نیا لاگ ان معلوم ہوا",
   "notifTitleWeeklySummary": "ہفتہ وار خلاصہ",
   "notifBodyWeeklySummary": "یہ اس ہفتے کے لیے آپ کے اخراجات کا خلاصہ ہے",
-  "ubaBank": "یو بی اے بینک"
+  "ubaBank": "یو بی اے بینک",
+  "tierBasicName": "بیسک",
+  "tierBasicPrice": "مفت",
+  "tierBasicLimit": "50.000F ماہانہ حد",
+  "tierStandardName": "سٹینڈرڈ",
+  "tierStandardPrice": "2.000F/ماہ",
+  "tierStandardLimit": "500.000F ماہانہ حد",
+  "tierPremiumName": "پریمیم",
+  "tierPremiumPrice": "5.000F/ماہ",
+  "tierPremiumLimit": "لین دین یا بیلنس کی کوئی حد نہیں"
 }
