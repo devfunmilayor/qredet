@@ -3,8 +3,6 @@ import '../theme/app_semantic_colors.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_text_styles.dart';
 
-/// Shared loading/error/empty placeholder. Callers own the icon and copy;
-/// this widget only owns the layout so every state screen looks alike.
 class StatePlaceholder extends StatelessWidget {
   const StatePlaceholder({
     super.key,

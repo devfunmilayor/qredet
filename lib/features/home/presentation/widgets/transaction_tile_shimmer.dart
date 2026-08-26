@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/shimmer_box.dart';
 
-/// Skeleton matching [TransactionTile]'s layout. [count] rows stacked.
 class TransactionTileShimmer extends StatelessWidget {
   const TransactionTileShimmer({super.key, this.count = 4});
 

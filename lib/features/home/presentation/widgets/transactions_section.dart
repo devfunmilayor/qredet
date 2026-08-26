@@ -12,9 +12,6 @@ import 'section_header.dart';
 import 'transaction_tile.dart';
 import 'transaction_tile_shimmer.dart';
 
-/// The "Payments" section, built as a sliver group so it plugs directly
-/// into [HomeScreen]'s `CustomScrollView` — the loaded list is a real
-/// `SliverList` rather than a boxed `Column`.
 class TransactionsSection extends StatelessWidget {
   const TransactionsSection({super.key, this.onSeeAll});
 

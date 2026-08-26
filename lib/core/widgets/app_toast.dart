@@ -4,9 +4,6 @@ import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_text_styles.dart';
 
-/// Lightweight overlay-based toast — no package. [showSuccess] is the only
-/// entry point today (green pill), but the color is a param so an error/info
-/// variant can reuse the same shell later.
 class AppToast {
   const AppToast._();
 

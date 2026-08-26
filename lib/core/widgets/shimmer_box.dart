@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_semantic_colors.dart';
 
-/// A single shimmering rounded rect — no package. Composed into
-/// content-shaped skeletons (see `balance_shimmer.dart`,
-/// `transaction_tile_shimmer.dart`) rather than used bare.
 class ShimmerBox extends StatefulWidget {
   const ShimmerBox({super.key, required this.width, required this.height, this.borderRadius = 8});
 

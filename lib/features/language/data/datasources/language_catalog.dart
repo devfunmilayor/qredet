@@ -1,7 +1,5 @@
 import '../../domain/entities/language.dart';
 
-/// The 20 languages the app ships UI copy for. Each `code` must have a
-/// matching `app_<code>.arb` file under `core/l10n/arb`.
 const List<Language> supportedLanguages = [
   Language(code: 'en', label: 'English', flagEmoji: '🇬🇧'),
   Language(code: 'zh', label: '中文', flagEmoji: '🇨🇳'),

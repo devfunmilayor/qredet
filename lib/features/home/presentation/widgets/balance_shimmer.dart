@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/shimmer_box.dart';
 
-/// Skeleton matching [BalanceHeader] + [VirtualAccountChip]'s layout.
 class BalanceShimmer extends StatelessWidget {
   const BalanceShimmer({super.key});
 
