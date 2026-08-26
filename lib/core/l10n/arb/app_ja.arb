@@ -30,5 +30,17 @@
   "password": "パスワード",
   "continueAsGuest": "ゲストとして続ける",
   "noAccountSignUp": "アカウントをお持ちでない方は新規登録",
-  "haveAccountLogin": "アカウントをお持ちの方はログイン"
+  "haveAccountLogin": "アカウントをお持ちの方はログイン",
+  "notifications": "通知",
+  "noNotificationsYet": "まだ通知はありません",
+  "transactionDetails": "取引の詳細",
+  "recipient": "受取人",
+  "amount": "金額",
+  "proceed": "進む",
+  "enterPin": "PINを入力",
+  "confirm": "確認",
+  "paymentSuccessful": "支払いが完了しました",
+  "paymentSuccessMessage": "お支払いが送信されました",
+  "backToHome": "ホームに戻る",
+  "bankAccount": "銀行口座"
 }

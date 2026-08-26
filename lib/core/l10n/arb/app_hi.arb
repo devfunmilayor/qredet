@@ -30,5 +30,17 @@
   "password": "पासवर्ड",
   "continueAsGuest": "अतिथि के रूप में जारी रखें",
   "noAccountSignUp": "खाता नहीं है? साइन अप करें",
-  "haveAccountLogin": "पहले से खाता है? लॉग इन करें"
+  "haveAccountLogin": "पहले से खाता है? लॉग इन करें",
+  "notifications": "सूचनाएं",
+  "noNotificationsYet": "अभी तक कोई सूचना नहीं",
+  "transactionDetails": "लेनदेन विवरण",
+  "recipient": "प्राप्तकर्ता",
+  "amount": "राशि",
+  "proceed": "आगे बढ़ें",
+  "enterPin": "पिन दर्ज करें",
+  "confirm": "पुष्टि करें",
+  "paymentSuccessful": "भुगतान सफल",
+  "paymentSuccessMessage": "आपका भुगतान भेज दिया गया है",
+  "backToHome": "होम पर वापस जाएं",
+  "bankAccount": "बैंक खाता"
 }

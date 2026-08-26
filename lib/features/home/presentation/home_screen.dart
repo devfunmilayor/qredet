@@ -11,8 +11,8 @@ import '../../language/presentation/widgets/language_pill.dart';
 import 'bloc/home_bloc.dart';
 import 'bloc/home_event.dart';
 import 'widgets/balance_section.dart';
+import 'widgets/make_payment_button.dart';
 import 'widgets/notification_bell.dart';
-import 'widgets/primary_button.dart';
 import 'widgets/transactions_section.dart';
 import 'widgets/upgrade_card.dart';
 import 'widgets/upgrade_tiers_sheet.dart';
@@ -42,15 +42,25 @@ class _HomeScreenBody extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final content = CustomScrollView(
       slivers: [
-        if (Platform.isIOS) CupertinoSliverRefreshControl(onRefresh: () => _refresh(context)),
+        if (Platform.isIOS)
+          CupertinoSliverRefreshControl(onRefresh: () => _refresh(context)),
         SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenHorizontal, vertical: AppSpacing.lg),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.screenHorizontal,
+            vertical: AppSpacing.lg,
+          ),
           sliver: SliverMainAxisGroup(
             slivers: [
               SliverToBoxAdapter(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [LanguagePill(), NotificationBell(hasUnread: true)],
+                  children: [
+                    const LanguagePill(),
+                    NotificationBell(
+                      hasUnread: true,
+                      onTap: () => context.push(AppRoutes.notifications),
+                    ),
+                  ],
                 ),
               ),
               const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xxl)),
@@ -64,7 +74,9 @@ class _HomeScreenBody extends StatelessWidget {
                 ),
               ),
               const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xxl)),
-              TransactionsSection(onSeeAll: () => context.push(AppRoutes.transactions)),
+              TransactionsSection(
+                onSeeAll: () => context.push(AppRoutes.transactions),
+              ),
             ],
           ),
         ),
@@ -73,11 +85,16 @@ class _HomeScreenBody extends StatelessWidget {
 
     return Scaffold(
       body: SafeArea(
-        child: Platform.isIOS ? content : RefreshIndicator(onRefresh: () => _refresh(context), child: content),
+        child: Platform.isIOS
+            ? content
+            : RefreshIndicator(
+                onRefresh: () => _refresh(context),
+                child: content,
+              ),
       ),
       bottomNavigationBar: SafeArea(
         minimum: const EdgeInsets.all(AppSpacing.screenHorizontal),
-        child: PrimaryButton(label: l10n.makePayment, onPressed: () {}),
+        child: const MakePaymentButton(),
       ),
     );
   }

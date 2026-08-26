@@ -30,5 +30,17 @@
   "password": "پاس ورڈ",
   "continueAsGuest": "مہمان کے طور پر جاری رکھیں",
   "noAccountSignUp": "اکاؤنٹ نہیں ہے؟ سائن اپ کریں",
-  "haveAccountLogin": "پہلے سے اکاؤنٹ ہے؟ لاگ ان کریں"
+  "haveAccountLogin": "پہلے سے اکاؤنٹ ہے؟ لاگ ان کریں",
+  "notifications": "اطلاعات",
+  "noNotificationsYet": "ابھی تک کوئی اطلاع نہیں",
+  "transactionDetails": "لین دین کی تفصیلات",
+  "recipient": "وصول کنندہ",
+  "amount": "رقم",
+  "proceed": "آگے بڑھیں",
+  "enterPin": "پن درج کریں",
+  "confirm": "تصدیق کریں",
+  "paymentSuccessful": "ادائیگی کامیاب",
+  "paymentSuccessMessage": "آپ کی ادائیگی بھیج دی گئی ہے",
+  "backToHome": "ہوم پر واپس جائیں",
+  "bankAccount": "بینک اکاؤنٹ"
 }
