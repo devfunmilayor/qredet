@@ -24,7 +24,10 @@ class PaymentDetailsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             DetailRow(label: l10n.recipient, value: mockPayment.recipientName),
-            DetailRow(label: l10n.bankAccount, value: '${l10n.ubaBank} ${mockPayment.accountNumber}'),
+            DetailRow(
+              label: l10n.bankAccount,
+              value: '${l10n.ubaBank} ${mockPayment.accountNumber}',
+            ),
             DetailRow(
               label: l10n.amount,
               value: formatCurrency(mockPayment.amount, locale: locale),

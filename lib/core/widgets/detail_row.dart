@@ -15,8 +15,16 @@ class DetailRow extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted)),
-          Text(value, style: AppTextStyles.chipBankName.copyWith(color: colors.textPrimary)),
+          Text(
+            label,
+            style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted),
+          ),
+          Text(
+            value,
+            style: AppTextStyles.chipBankName.copyWith(
+              color: colors.textPrimary,
+            ),
+          ),
         ],
       ),
     );

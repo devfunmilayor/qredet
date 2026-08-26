@@ -7,5 +7,6 @@ import '../router/splash_gate.dart';
 @module
 abstract class RouterModule {
   @lazySingleton
-  GoRouter router(AuthBloc authBloc, SplashGate splashGate) => buildRouter(authBloc, splashGate);
+  GoRouter router(AuthBloc authBloc, SplashGate splashGate) =>
+      buildRouter(authBloc, splashGate);
 }

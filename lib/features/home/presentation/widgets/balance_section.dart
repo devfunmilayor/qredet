@@ -23,24 +23,30 @@ class BalanceSection extends StatelessWidget {
         return switch (state.balance) {
           BalanceLoading() => const BalanceShimmer(),
           BalanceError() => StatePlaceholder(
-              icon: Icons.error_outline,
-              title: l10n.balanceErrorTitle,
-              subtitle: l10n.tryAgainMessage,
-              retryLabel: l10n.retry,
-              onRetry: () => context.read<HomeBloc>().add(const HomeEvent.balanceRetried()),
-            ),
+            icon: Icons.error_outline,
+            title: l10n.balanceErrorTitle,
+            subtitle: l10n.tryAgainMessage,
+            retryLabel: l10n.retry,
+            onRetry: () =>
+                context.read<HomeBloc>().add(const HomeEvent.balanceRetried()),
+          ),
           BalanceLoaded(:final summary) => Column(
-              children: [
-                BalanceHeader(balance: summary.balance, label: l10n.walletBalance),
-                const SizedBox(height: AppSpacing.lg),
-                VirtualAccountChip(account: summary.virtualAccount),
-                const SizedBox(height: AppSpacing.xs),
-                Text(
-                  l10n.virtualAccount,
-                  style: AppTextStyles.virtualAccountCaption.copyWith(color: context.colors.textMuted),
+            children: [
+              BalanceHeader(
+                balance: summary.balance,
+                label: l10n.walletBalance,
+              ),
+              const SizedBox(height: AppSpacing.lg),
+              VirtualAccountChip(account: summary.virtualAccount),
+              const SizedBox(height: AppSpacing.xs),
+              Text(
+                l10n.virtualAccount,
+                style: AppTextStyles.virtualAccountCaption.copyWith(
+                  color: context.colors.textMuted,
                 ),
-              ],
-            ),
+              ),
+            ],
+          ),
         };
       },
     );

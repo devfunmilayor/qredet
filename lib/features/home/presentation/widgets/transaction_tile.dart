@@ -37,10 +37,17 @@ class TransactionTile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(transaction.alias, style: AppTextStyles.tileAlias.copyWith(color: colors.textPrimary)),
+                  Text(
+                    transaction.alias,
+                    style: AppTextStyles.tileAlias.copyWith(
+                      color: colors.textPrimary,
+                    ),
+                  ),
                   Text(
                     formatTransactionDate(transaction.date, locale: locale),
-                    style: AppTextStyles.tileDate.copyWith(color: colors.textMuted),
+                    style: AppTextStyles.tileDate.copyWith(
+                      color: colors.textMuted,
+                    ),
                   ),
                 ],
               ),

@@ -9,7 +9,11 @@ const _keypadRows = [
 ];
 
 class PinKeypad extends StatelessWidget {
-  const PinKeypad({super.key, required this.onDigit, required this.onBackspace});
+  const PinKeypad({
+    super.key,
+    required this.onDigit,
+    required this.onBackspace,
+  });
 
   final ValueChanged<String> onDigit;
   final VoidCallback onBackspace;
@@ -24,7 +28,14 @@ class PinKeypad extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: AppSpacing.xs),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [for (final key in row) _KeypadKey(value: key, onDigit: onDigit, onBackspace: onBackspace)],
+              children: [
+                for (final key in row)
+                  _KeypadKey(
+                    value: key,
+                    onDigit: onDigit,
+                    onBackspace: onBackspace,
+                  ),
+              ],
             ),
           ),
       ],
@@ -33,7 +44,11 @@ class PinKeypad extends StatelessWidget {
 }
 
 class _KeypadKey extends StatelessWidget {
-  const _KeypadKey({required this.value, required this.onDigit, required this.onBackspace});
+  const _KeypadKey({
+    required this.value,
+    required this.onDigit,
+    required this.onBackspace,
+  });
 
   final String value;
   final ValueChanged<String> onDigit;
@@ -54,8 +69,17 @@ class _KeypadKey extends StatelessWidget {
           onTap: isBackspace ? onBackspace : () => onDigit(value),
           child: Center(
             child: isBackspace
-                ? Icon(Icons.backspace_outlined, color: colors.textPrimary, size: 22)
-                : Text(value, style: AppTextStyles.sheetTitle.copyWith(color: colors.textPrimary)),
+                ? Icon(
+                    Icons.backspace_outlined,
+                    color: colors.textPrimary,
+                    size: 22,
+                  )
+                : Text(
+                    value,
+                    style: AppTextStyles.sheetTitle.copyWith(
+                      color: colors.textPrimary,
+                    ),
+                  ),
           ),
         ),
       ),

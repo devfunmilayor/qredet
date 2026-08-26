@@ -26,12 +26,17 @@ class QredetApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => getIt<LanguageBloc>()..add(const LanguageEvent.started())),
+        BlocProvider(
+          create: (_) =>
+              getIt<LanguageBloc>()..add(const LanguageEvent.started()),
+        ),
         BlocProvider.value(value: getIt<AuthBloc>()),
       ],
       child: BlocBuilder<LanguageBloc, LanguageState>(
         builder: (context, state) {
-          final locale = state is LanguageLoaded ? Locale(state.selected.code) : null;
+          final locale = state is LanguageLoaded
+              ? Locale(state.selected.code)
+              : null;
           return MaterialApp.router(
             onGenerateTitle: (context) => AppLocalizations.of(context).appName,
             theme: buildLightTheme(),

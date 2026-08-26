@@ -6,7 +6,13 @@ import '../../domain/entities/wallet_summary.dart';
 import 'home_data_source.dart';
 
 const _mockTransactionCount = 50;
-const _mockAliases = ['Ada Lovelace', 'Grace Hopper', 'Alan Turing', 'Katherine Johnson', 'John Backus'];
+const _mockAliases = [
+  'Ada Lovelace',
+  'Grace Hopper',
+  'Alan Turing',
+  'Katherine Johnson',
+  'John Backus',
+];
 
 @lazySingleton
 class HomeMockDataSource implements HomeDataSource {
@@ -17,18 +23,29 @@ class HomeMockDataSource implements HomeDataSource {
     await Future<void>.delayed(const Duration(milliseconds: 600));
     return const WalletSummary(
       balance: 10000,
-      virtualAccount: VirtualAccount(bankName: 'UBA Bank', accountNumber: '0123456789'),
+      virtualAccount: VirtualAccount(
+        bankName: 'UBA Bank',
+        accountNumber: '0123456789',
+      ),
     );
   }
 
   @override
-  Future<TransactionsPage> getTransactions({required int page, required int pageSize}) async {
+  Future<TransactionsPage> getTransactions({
+    required int page,
+    required int pageSize,
+  }) async {
     await Future<void>.delayed(const Duration(milliseconds: 600));
     final all = List.generate(_mockTransactionCount, _mockTransactionAt);
     final start = (page - 1) * pageSize;
-    if (start >= all.length) return const TransactionsPage(items: [], hasMore: false);
+    if (start >= all.length) {
+      return const TransactionsPage(items: [], hasMore: false);
+    }
     final end = (start + pageSize).clamp(0, all.length);
-    return TransactionsPage(items: all.sublist(start, end), hasMore: end < all.length);
+    return TransactionsPage(
+      items: all.sublist(start, end),
+      hasMore: end < all.length,
+    );
   }
 
   Transaction _mockTransactionAt(int index) {

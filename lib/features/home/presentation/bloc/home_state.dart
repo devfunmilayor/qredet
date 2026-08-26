@@ -12,6 +12,8 @@ abstract class HomeState with _$HomeState {
     @Default(false) bool isRefreshing,
   }) = _HomeState;
 
-  factory HomeState.initial() =>
-      const HomeState(balance: BalanceState.loading(), transactions: TransactionsState.loading());
+  factory HomeState.initial() => const HomeState(
+    balance: BalanceState.loading(),
+    transactions: TransactionsState.loading(),
+  );
 }

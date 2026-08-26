@@ -11,8 +11,14 @@ class PaymentPinSheet extends StatefulWidget {
 
   final VoidCallback onConfirmed;
 
-  static Future<void> show(BuildContext context, {required VoidCallback onConfirmed}) {
-    return GlassSheet.show(context, builder: (_) => PaymentPinSheet(onConfirmed: onConfirmed));
+  static Future<void> show(
+    BuildContext context, {
+    required VoidCallback onConfirmed,
+  }) {
+    return GlassSheet.show(
+      context,
+      builder: (_) => PaymentPinSheet(onConfirmed: onConfirmed),
+    );
   }
 
   @override
@@ -44,7 +50,10 @@ class _PaymentPinSheetState extends State<PaymentPinSheet> {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(_pinLength, (index) => _PinBox(isFilled: index < _pin.length)),
+              children: List.generate(
+                _pinLength,
+                (index) => _PinBox(isFilled: index < _pin.length),
+              ),
             ),
             const SizedBox(height: AppSpacing.xl),
             PinKeypad(onDigit: _onDigit, onBackspace: _onBackspace),
@@ -76,10 +85,20 @@ class _PinBox extends StatelessWidget {
       decoration: BoxDecoration(
         color: colors.chipBackground,
         borderRadius: BorderRadius.circular(AppSpacing.md),
-        border: Border.all(color: isFilled ? colors.primary : colors.divider, width: 1.5),
+        border: Border.all(
+          color: isFilled ? colors.primary : colors.divider,
+          width: 1.5,
+        ),
       ),
       child: isFilled
-          ? Container(width: 10, height: 10, decoration: BoxDecoration(color: colors.primary, shape: BoxShape.circle))
+          ? Container(
+              width: 10,
+              height: 10,
+              decoration: BoxDecoration(
+                color: colors.primary,
+                shape: BoxShape.circle,
+              ),
+            )
           : null,
     );
   }

@@ -26,8 +26,11 @@ class _NotificationsListViewState extends State<NotificationsListView> {
   }
 
   void _onScroll() {
-    if (_scrollController.position.pixels > _scrollController.position.maxScrollExtent - 200) {
-      context.read<NotificationsBloc>().add(const NotificationsEvent.moreRequested());
+    if (_scrollController.position.pixels >
+        _scrollController.position.maxScrollExtent - 200) {
+      context.read<NotificationsBloc>().add(
+        const NotificationsEvent.moreRequested(),
+      );
     }
   }
 
@@ -42,7 +45,10 @@ class _NotificationsListViewState extends State<NotificationsListView> {
     final items = widget.state.items;
     return ListView.builder(
       controller: _scrollController,
-      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenHorizontal, vertical: AppSpacing.md),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.screenHorizontal,
+        vertical: AppSpacing.md,
+      ),
       itemCount: items.length + (widget.state.isLoadingMore ? 1 : 0),
       itemBuilder: (context, index) {
         if (index >= items.length) {
@@ -53,10 +59,17 @@ class _NotificationsListViewState extends State<NotificationsListView> {
         }
         final notification = items[index];
         return NotificationTile(
-          notification: notification,
-          onDelete: () => context.read<NotificationsBloc>().add(NotificationsEvent.deleted(notification.id)),
-          onMarkRead: () => context.read<NotificationsBloc>().add(NotificationsEvent.markedRead(notification.id)),
-        ).animate(delay: (30 * index).ms).fadeIn(duration: 200.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOut);
+              notification: notification,
+              onDelete: () => context.read<NotificationsBloc>().add(
+                NotificationsEvent.deleted(notification.id),
+              ),
+              onMarkRead: () => context.read<NotificationsBloc>().add(
+                NotificationsEvent.markedRead(notification.id),
+              ),
+            )
+            .animate(delay: (30 * index).ms)
+            .fadeIn(duration: 200.ms)
+            .slideY(begin: 0.1, end: 0, curve: Curves.easeOut);
       },
     );
   }

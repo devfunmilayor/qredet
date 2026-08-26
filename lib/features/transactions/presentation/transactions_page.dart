@@ -16,7 +16,9 @@ class TransactionsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => getIt<TransactionsListBloc>()..add(const TransactionsListEvent.started()),
+      create: (_) =>
+          getIt<TransactionsListBloc>()
+            ..add(const TransactionsListEvent.started()),
       child: const _TransactionsPageBody(),
     );
   }
@@ -44,29 +46,38 @@ class _TransactionsPageBodyState extends State<_TransactionsPageBody> {
     return Scaffold(
       appBar: AppBar(title: Text(l10n.allTransactions)),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenHorizontal),
+        padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.screenHorizontal,
+        ),
         child: Column(
           children: [
             const SizedBox(height: AppSpacing.md),
             SearchField(
               controller: _searchController,
               hint: l10n.searchTransactions,
-              onChanged: (query) => context.read<TransactionsListBloc>().add(TransactionsListEvent.searched(query)),
+              onChanged: (query) => context.read<TransactionsListBloc>().add(
+                TransactionsListEvent.searched(query),
+              ),
             ),
             const SizedBox(height: AppSpacing.md),
             Expanded(
               child: BlocBuilder<TransactionsListBloc, TransactionsListState>(
                 builder: (context, state) {
                   return switch (state.status) {
-                    TransactionsListStatus.loading => const TransactionTileShimmer(count: 6),
+                    TransactionsListStatus.loading =>
+                      const TransactionTileShimmer(count: 6),
                     TransactionsListStatus.error => StatePlaceholder(
-                        icon: Icons.error_outline,
-                        title: l10n.transactionsErrorTitle,
-                        subtitle: l10n.tryAgainMessage,
-                        retryLabel: l10n.retry,
-                        onRetry: () => context.read<TransactionsListBloc>().add(const TransactionsListEvent.started()),
+                      icon: Icons.error_outline,
+                      title: l10n.transactionsErrorTitle,
+                      subtitle: l10n.tryAgainMessage,
+                      retryLabel: l10n.retry,
+                      onRetry: () => context.read<TransactionsListBloc>().add(
+                        const TransactionsListEvent.started(),
                       ),
-                    TransactionsListStatus.loaded => TransactionsListView(state: state),
+                    ),
+                    TransactionsListStatus.loaded => TransactionsListView(
+                      state: state,
+                    ),
                   };
                 },
               ),

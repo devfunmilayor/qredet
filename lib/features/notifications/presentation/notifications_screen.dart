@@ -16,7 +16,8 @@ class NotificationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => getIt<NotificationsBloc>()..add(const NotificationsEvent.started()),
+      create: (_) =>
+          getIt<NotificationsBloc>()..add(const NotificationsEvent.started()),
       child: const _NotificationsScreenBody(),
     );
   }
@@ -34,18 +35,26 @@ class _NotificationsScreenBody extends StatelessWidget {
         builder: (context, state) {
           return switch (state.status) {
             NotificationsStatus.loading => const Padding(
-                padding: EdgeInsets.symmetric(horizontal: AppSpacing.screenHorizontal, vertical: AppSpacing.md),
-                child: NotificationTileShimmer(),
+              padding: EdgeInsets.symmetric(
+                horizontal: AppSpacing.screenHorizontal,
+                vertical: AppSpacing.md,
               ),
+              child: NotificationTileShimmer(),
+            ),
             NotificationsStatus.error => StatePlaceholder(
-                icon: Icons.error_outline,
-                title: l10n.transactionsErrorTitle,
-                subtitle: l10n.tryAgainMessage,
-                retryLabel: l10n.retry,
-                onRetry: () => context.read<NotificationsBloc>().add(const NotificationsEvent.started()),
+              icon: Icons.error_outline,
+              title: l10n.transactionsErrorTitle,
+              subtitle: l10n.tryAgainMessage,
+              retryLabel: l10n.retry,
+              onRetry: () => context.read<NotificationsBloc>().add(
+                const NotificationsEvent.started(),
               ),
+            ),
             NotificationsStatus.loaded when state.items.isEmpty =>
-              StatePlaceholder(icon: Icons.notifications_none, title: l10n.noNotificationsYet),
+              StatePlaceholder(
+                icon: Icons.notifications_none,
+                title: l10n.noNotificationsYet,
+              ),
             NotificationsStatus.loaded => NotificationsListView(state: state),
           };
         },

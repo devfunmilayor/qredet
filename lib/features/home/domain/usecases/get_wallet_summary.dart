@@ -12,5 +12,6 @@ class GetWalletSummary implements UseCase<WalletSummary, NoParams> {
   final HomeRepository _repository;
 
   @override
-  Future<Either<Failure, WalletSummary>> call(NoParams params) => _repository.getWalletSummary();
+  Future<Either<Failure, WalletSummary>> call(NoParams params) =>
+      _repository.getWalletSummary();
 }

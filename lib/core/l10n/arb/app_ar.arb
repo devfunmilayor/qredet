@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "تم اكتشاف تسجيل دخول جديد إلى حسابك",
   "notifTitleWeeklySummary": "ملخص أسبوعي",
   "notifBodyWeeklySummary": "إليك ملخص إنفاقك لهذا الأسبوع",
-  "ubaBank": "بنك UBA"
+  "ubaBank": "بنك UBA",
+  "tierBasicName": "أساسي",
+  "tierBasicPrice": "مجاني",
+  "tierBasicLimit": "حد شهري قدره 50.000F",
+  "tierStandardName": "قياسي",
+  "tierStandardPrice": "2.000F/شهريًا",
+  "tierStandardLimit": "حد شهري قدره 500.000F",
+  "tierPremiumName": "بريميوم",
+  "tierPremiumPrice": "5.000F/شهريًا",
+  "tierPremiumLimit": "بدون حدود للمعاملات أو الرصيد"
 }

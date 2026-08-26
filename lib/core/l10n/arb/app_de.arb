@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "Eine neue Anmeldung bei Ihrem Konto wurde erkannt",
   "notifTitleWeeklySummary": "Wöchentliche Zusammenfassung",
   "notifBodyWeeklySummary": "Hier ist Ihre Ausgabenübersicht für diese Woche",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "Basic",
+  "tierBasicPrice": "Kostenlos",
+  "tierBasicLimit": "Monatliches Limit von 50.000F",
+  "tierStandardName": "Standard",
+  "tierStandardPrice": "2.000F/Monat",
+  "tierStandardLimit": "Monatliches Limit von 500.000F",
+  "tierPremiumName": "Premium",
+  "tierPremiumPrice": "5.000F/Monat",
+  "tierPremiumLimit": "Keine Transaktions- oder Guthabenlimits"
 }

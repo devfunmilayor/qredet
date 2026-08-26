@@ -11,7 +11,8 @@ abstract class RegisterModule {
   Dio get dio => buildDioClient();
 
   @preResolve
-  Future<Box<String>> get settingsBox => Hive.openBox<String>(HiveBoxes.settings);
+  Future<Box<String>> get settingsBox =>
+      Hive.openBox<String>(HiveBoxes.settings);
 
   @lazySingleton
   FlutterSecureStorage get secureStorage => const FlutterSecureStorage();

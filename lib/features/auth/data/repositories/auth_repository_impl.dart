@@ -12,17 +12,24 @@ class AuthRepositoryImpl implements AuthRepository {
   final AuthDataSource _dataSource;
 
   @override
-  Future<Either<Failure, AppUser>> login({required String email, required String password}) {
+  Future<Either<Failure, AppUser>> login({
+    required String email,
+    required String password,
+  }) {
     return _guard(() => _dataSource.login(email: email, password: password));
   }
 
   @override
-  Future<Either<Failure, AppUser>> signUp({required String email, required String password}) {
+  Future<Either<Failure, AppUser>> signUp({
+    required String email,
+    required String password,
+  }) {
     return _guard(() => _dataSource.signUp(email: email, password: password));
   }
 
   @override
-  Future<Either<Failure, AppUser>> loginAsGuest() => _guard(_dataSource.loginAsGuest);
+  Future<Either<Failure, AppUser>> loginAsGuest() =>
+      _guard(_dataSource.loginAsGuest);
 
   @override
   Future<Either<Failure, Unit>> logout() async {
@@ -37,7 +44,9 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Stream<AppUser?> authStateChanges() => _dataSource.authStateChanges();
 
-  Future<Either<Failure, AppUser>> _guard(Future<AppUser> Function() action) async {
+  Future<Either<Failure, AppUser>> _guard(
+    Future<AppUser> Function() action,
+  ) async {
     try {
       return Right(await action());
     } catch (e) {

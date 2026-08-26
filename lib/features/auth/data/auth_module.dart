@@ -7,6 +7,8 @@ import 'datasources/auth_mock_data_source.dart';
 @module
 abstract class AuthModule {
   @lazySingleton
-  AuthDataSource dataSource(AuthMockDataSource mock, AuthFirebaseDataSource firebase) =>
-      AppConfig.useMockAuth ? mock : firebase;
+  AuthDataSource dataSource(
+    AuthMockDataSource mock,
+    AuthFirebaseDataSource firebase,
+  ) => AppConfig.useMockAuth ? mock : firebase;
 }

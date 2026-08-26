@@ -14,7 +14,8 @@ class LanguageSheet extends StatelessWidget {
     final bloc = context.read<LanguageBloc>();
     return GlassSheet.show(
       context,
-      builder: (_) => BlocProvider.value(value: bloc, child: const LanguageSheet()),
+      builder: (_) =>
+          BlocProvider.value(value: bloc, child: const LanguageSheet()),
     );
   }
 
@@ -34,7 +35,9 @@ class LanguageSheet extends StatelessWidget {
                 language: language,
                 selected: language.code == state.selected.code,
                 onTap: () {
-                  context.read<LanguageBloc>().add(LanguageEvent.changed(language));
+                  context.read<LanguageBloc>().add(
+                    LanguageEvent.changed(language),
+                  );
                   Navigator.of(context).pop();
                 },
               );

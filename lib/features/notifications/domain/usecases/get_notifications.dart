@@ -17,13 +17,19 @@ class GetNotificationsParams extends Equatable {
 }
 
 @lazySingleton
-class GetNotifications implements UseCase<NotificationsPage, GetNotificationsParams> {
+class GetNotifications
+    implements UseCase<NotificationsPage, GetNotificationsParams> {
   const GetNotifications(this._repository);
 
   final NotificationsRepository _repository;
 
   @override
-  Future<Either<Failure, NotificationsPage>> call(GetNotificationsParams params) {
-    return _repository.getNotifications(page: params.page, pageSize: params.pageSize);
+  Future<Either<Failure, NotificationsPage>> call(
+    GetNotificationsParams params,
+  ) {
+    return _repository.getNotifications(
+      page: params.page,
+      pageSize: params.pageSize,
+    );
   }
 }

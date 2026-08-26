@@ -44,13 +44,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final canSubmit = _email.text.trim().isNotEmpty && _password.text.trim().isNotEmpty;
+    final canSubmit =
+        _email.text.trim().isNotEmpty && _password.text.trim().isNotEmpty;
     return Scaffold(
       body: SafeArea(
         child: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is AuthError) {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(state.failure.userMessage)));
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(state.failure.userMessage)),
+              );
             }
           },
           builder: (context, state) {
@@ -61,19 +64,33 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: AppSpacing.xxxl),
-                  Text(l10n.signUp, style: Theme.of(context).textTheme.headlineMedium),
+                  Text(
+                    l10n.signUp,
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
                   const SizedBox(height: AppSpacing.xxl),
-                  AppTextField(label: l10n.email, controller: _email, keyboardType: TextInputType.emailAddress),
+                  AppTextField(
+                    label: l10n.email,
+                    controller: _email,
+                    keyboardType: TextInputType.emailAddress,
+                  ),
                   const SizedBox(height: AppSpacing.md),
-                  AppTextField(label: l10n.password, controller: _password, obscureText: true),
+                  AppTextField(
+                    label: l10n.password,
+                    controller: _password,
+                    obscureText: true,
+                  ),
                   const SizedBox(height: AppSpacing.xxl),
                   PrimaryButton(
                     label: l10n.signUp,
                     isLoading: isLoading,
                     onPressed: canSubmit
                         ? () => context.read<AuthBloc>().add(
-                              AuthEvent.signUpSubmitted(email: _email.text, password: _password.text),
-                            )
+                            AuthEvent.signUpSubmitted(
+                              email: _email.text,
+                              password: _password.text,
+                            ),
+                          )
                         : null,
                   ),
                   const SizedBox(height: AppSpacing.lg),

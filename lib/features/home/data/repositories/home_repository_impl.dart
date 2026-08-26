@@ -23,16 +23,23 @@ class HomeRepositoryImpl implements HomeRepository {
   }
 
   @override
-  Future<Either<Failure, TransactionsPage>> getTransactions({required int page, required int pageSize}) async {
+  Future<Either<Failure, TransactionsPage>> getTransactions({
+    required int page,
+    required int pageSize,
+  }) async {
     try {
-      return Right(await _dataSource.getTransactions(page: page, pageSize: pageSize));
+      return Right(
+        await _dataSource.getTransactions(page: page, pageSize: pageSize),
+      );
     } catch (e) {
       return Left(_toFailure(e));
     }
   }
 
   Failure _toFailure(Object error) {
-    if (error is DioException && error.error is Failure) return error.error as Failure;
+    if (error is DioException && error.error is Failure) {
+      return error.error as Failure;
+    }
     return mapExceptionToFailure(error);
   }
 }

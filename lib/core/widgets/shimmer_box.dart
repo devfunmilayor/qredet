@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import '../theme/app_semantic_colors.dart';
 
 class ShimmerBox extends StatefulWidget {
-  const ShimmerBox({super.key, required this.width, required this.height, this.borderRadius = 8});
+  const ShimmerBox({
+    super.key,
+    required this.width,
+    required this.height,
+    this.borderRadius = 8,
+  });
 
   final double width;
   final double height;
@@ -12,9 +17,12 @@ class ShimmerBox extends StatefulWidget {
   State<ShimmerBox> createState() => _ShimmerBoxState();
 }
 
-class _ShimmerBoxState extends State<ShimmerBox> with SingleTickerProviderStateMixin {
-  late final AnimationController _controller =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 1200))..repeat();
+class _ShimmerBoxState extends State<ShimmerBox>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 1200),
+  )..repeat();
 
   @override
   void dispose() {
@@ -43,7 +51,10 @@ class _ShimmerBoxState extends State<ShimmerBox> with SingleTickerProviderStateM
           child: Container(
             width: widget.width,
             height: widget.height,
-            decoration: BoxDecoration(color: base, borderRadius: BorderRadius.circular(widget.borderRadius)),
+            decoration: BoxDecoration(
+              color: base,
+              borderRadius: BorderRadius.circular(widget.borderRadius),
+            ),
           ),
         );
       },

@@ -3,7 +3,12 @@ import '../theme/app_semantic_colors.dart';
 import 'app_text_field.dart';
 
 class SearchField extends StatelessWidget {
-  const SearchField({super.key, required this.controller, required this.hint, this.onChanged});
+  const SearchField({
+    super.key,
+    required this.controller,
+    required this.hint,
+    this.onChanged,
+  });
 
   final TextEditingController controller;
   final String hint;

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
-
 class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
   const AppSemanticColors({
     required this.primary,
@@ -34,36 +33,36 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
   final Color brandCream;
 
   factory AppSemanticColors.light() => const AppSemanticColors(
-        primary: AppColors.primaryPurple,
-        primaryPressed: AppColors.primaryPurplePressed,
-        chipBackground: AppColors.chipBackground,
-        textNavy: AppColors.textNavy,
-        textPrimary: AppColors.textPrimary,
-        textMuted: AppColors.textMuted,
-        textOnPrimary: AppColors.textOnPrimary,
-        surfaceCard: AppColors.surfaceCard,
-        surfaceAvatar: AppColors.surfaceAvatar,
-        surfaceBackground: AppColors.surfaceBackground,
-        divider: AppColors.divider,
-        error: AppColors.error,
-        brandCream: AppColors.brandCream,
-      );
+    primary: AppColors.primaryPurple,
+    primaryPressed: AppColors.primaryPurplePressed,
+    chipBackground: AppColors.chipBackground,
+    textNavy: AppColors.textNavy,
+    textPrimary: AppColors.textPrimary,
+    textMuted: AppColors.textMuted,
+    textOnPrimary: AppColors.textOnPrimary,
+    surfaceCard: AppColors.surfaceCard,
+    surfaceAvatar: AppColors.surfaceAvatar,
+    surfaceBackground: AppColors.surfaceBackground,
+    divider: AppColors.divider,
+    error: AppColors.error,
+    brandCream: AppColors.brandCream,
+  );
 
   factory AppSemanticColors.dark() => const AppSemanticColors(
-        primary: AppColors.darkPrimaryPurple,
-        primaryPressed: AppColors.primaryPurple,
-        chipBackground: AppColors.darkChipBackground,
-        textNavy: AppColors.darkTextPrimary,
-        textPrimary: AppColors.darkTextPrimary,
-        textMuted: AppColors.darkTextMuted,
-        textOnPrimary: AppColors.darkTextPrimary,
-        surfaceCard: AppColors.darkSurfaceCard,
-        surfaceAvatar: AppColors.darkSurfaceAvatar,
-        surfaceBackground: AppColors.darkBackground,
-        divider: AppColors.darkDivider,
-        error: AppColors.darkError,
-        brandCream: AppColors.brandCream,
-      );
+    primary: AppColors.darkPrimaryPurple,
+    primaryPressed: AppColors.primaryPurple,
+    chipBackground: AppColors.darkChipBackground,
+    textNavy: AppColors.darkTextPrimary,
+    textPrimary: AppColors.darkTextPrimary,
+    textMuted: AppColors.darkTextMuted,
+    textOnPrimary: AppColors.darkTextPrimary,
+    surfaceCard: AppColors.darkSurfaceCard,
+    surfaceAvatar: AppColors.darkSurfaceAvatar,
+    surfaceBackground: AppColors.darkBackground,
+    divider: AppColors.darkDivider,
+    error: AppColors.darkError,
+    brandCream: AppColors.brandCream,
+  );
 
   @override
   AppSemanticColors copyWith({
@@ -111,7 +110,11 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
       textOnPrimary: Color.lerp(textOnPrimary, other.textOnPrimary, t)!,
       surfaceCard: Color.lerp(surfaceCard, other.surfaceCard, t)!,
       surfaceAvatar: Color.lerp(surfaceAvatar, other.surfaceAvatar, t)!,
-      surfaceBackground: Color.lerp(surfaceBackground, other.surfaceBackground, t)!,
+      surfaceBackground: Color.lerp(
+        surfaceBackground,
+        other.surfaceBackground,
+        t,
+      )!,
       divider: Color.lerp(divider, other.divider, t)!,
       error: Color.lerp(error, other.error, t)!,
       brandCream: Color.lerp(brandCream, other.brandCream, t)!,
@@ -120,5 +123,6 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
 }
 
 extension AppThemeContext on BuildContext {
-  AppSemanticColors get colors => Theme.of(this).extension<AppSemanticColors>()!;
+  AppSemanticColors get colors =>
+      Theme.of(this).extension<AppSemanticColors>()!;
 }

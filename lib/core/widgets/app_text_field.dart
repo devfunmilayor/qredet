@@ -47,7 +47,11 @@ class _AppTextFieldState extends State<AppTextField> {
         prefixIcon: widget.prefixIcon,
         suffixIcon: widget.obscureText
             ? IconButton(
-                icon: Icon(_obscure ? Icons.visibility_off_outlined : Icons.visibility_outlined),
+                icon: Icon(
+                  _obscure
+                      ? Icons.visibility_off_outlined
+                      : Icons.visibility_outlined,
+                ),
                 onPressed: () => setState(() => _obscure = !_obscure),
               )
             : widget.suffixIcon,
@@ -57,7 +61,10 @@ class _AppTextFieldState extends State<AppTextField> {
           borderRadius: BorderRadius.circular(AppSpacing.md),
           borderSide: BorderSide.none,
         ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.lg,
+          vertical: AppSpacing.md,
+        ),
       ),
     );
   }

@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "检测到您的账户有新登录",
   "notifTitleWeeklySummary": "每周摘要",
   "notifBodyWeeklySummary": "这是您本周的支出摘要",
-  "ubaBank": "UBA Bank"
+  "ubaBank": "UBA Bank",
+  "tierBasicName": "基础版",
+  "tierBasicPrice": "免费",
+  "tierBasicLimit": "每月限额 50.000F",
+  "tierStandardName": "标准版",
+  "tierStandardPrice": "2.000F/月",
+  "tierStandardLimit": "每月限额 500.000F",
+  "tierPremiumName": "高级版",
+  "tierPremiumPrice": "5.000F/月",
+  "tierPremiumLimit": "无交易或余额限制"
 }

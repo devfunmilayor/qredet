@@ -19,7 +19,10 @@ class LanguagePill extends StatelessWidget {
           onTap: () => LanguageSheet.show(context),
           borderRadius: BorderRadius.circular(AppSpacing.pillRadius),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: AppSpacing.xs),
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.md,
+              vertical: AppSpacing.xs,
+            ),
             decoration: BoxDecoration(
               color: colors.chipBackground,
               borderRadius: BorderRadius.circular(AppSpacing.pillRadius),
@@ -27,14 +30,23 @@ class LanguagePill extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(state.selected.flagEmoji, style: const TextStyle(fontSize: 20)),
+                Text(
+                  state.selected.flagEmoji,
+                  style: const TextStyle(fontSize: 18.5),
+                ),
                 const SizedBox(width: AppSpacing.sm),
                 Text(
                   state.selected.label,
-                  style: AppTextStyles.pillLabel.copyWith(color: colors.textPrimary),
+                  style: AppTextStyles.pillLabel.copyWith(
+                    color: colors.textPrimary,
+                  ),
                 ),
                 const SizedBox(width: AppSpacing.xs),
-                Icon(Icons.keyboard_arrow_down, color: colors.textMuted, size: 20),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                  color: colors.textMuted,
+                  size: 20,
+                ),
               ],
             ),
           ),

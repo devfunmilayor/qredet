@@ -12,5 +12,6 @@ class GetSelectedLanguage implements UseCase<Language, NoParams> {
   final LanguageRepository _repository;
 
   @override
-  Future<Either<Failure, Language>> call(NoParams params) => _repository.getSelectedLanguage();
+  Future<Either<Failure, Language>> call(NoParams params) =>
+      _repository.getSelectedLanguage();
 }

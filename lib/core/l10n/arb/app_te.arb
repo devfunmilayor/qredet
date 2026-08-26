@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "మీ ఖాతాలో కొత్త లాగిన్ గుర్తించబడింది",
   "notifTitleWeeklySummary": "వారపు సారాంశం",
   "notifBodyWeeklySummary": "ఇదిగో ఈ వారానికి మీ ఖర్చు సారాంశం",
-  "ubaBank": "యుబిఎ బ్యాంక్"
+  "ubaBank": "యుబిఎ బ్యాంక్",
+  "tierBasicName": "బేసిక్",
+  "tierBasicPrice": "ఉచితం",
+  "tierBasicLimit": "నెలవారీ పరిమితి 50.000F",
+  "tierStandardName": "స్టాండర్డ్",
+  "tierStandardPrice": "2.000F/నెల",
+  "tierStandardLimit": "నెలవారీ పరిమితి 500.000F",
+  "tierPremiumName": "ప్రీమియం",
+  "tierPremiumPrice": "5.000F/నెల",
+  "tierPremiumLimit": "లావాదేవీ లేదా బ్యాలెన్స్ పరిమితులు లేవు"
 }

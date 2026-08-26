@@ -57,5 +57,14 @@
   "notifBodySecurityAlert": "আপনার অ্যাকাউন্টে একটি নতুন লগইন সনাক্ত করা হয়েছে",
   "notifTitleWeeklySummary": "সাপ্তাহিক সারসংক্ষেপ",
   "notifBodyWeeklySummary": "এই সপ্তাহের জন্য আপনার খরচের সারসংক্ষেপ এখানে",
-  "ubaBank": "ইউবিএ ব্যাংক"
+  "ubaBank": "ইউবিএ ব্যাংক",
+  "tierBasicName": "বেসিক",
+  "tierBasicPrice": "ফ্রি",
+  "tierBasicLimit": "মাসিক সীমা 50.000F",
+  "tierStandardName": "স্ট্যান্ডার্ড",
+  "tierStandardPrice": "2.000F/মাস",
+  "tierStandardLimit": "মাসিক সীমা 500.000F",
+  "tierPremiumName": "প্রিমিয়াম",
+  "tierPremiumPrice": "5.000F/মাস",
+  "tierPremiumLimit": "কোনো লেনদেন বা ব্যালেন্স সীমা নেই"
 }

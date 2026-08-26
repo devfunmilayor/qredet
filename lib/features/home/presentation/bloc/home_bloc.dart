@@ -12,7 +12,8 @@ const _homePageSize = 8;
 
 @injectable
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  HomeBloc(this._getWalletSummary, this._getTransactions) : super(HomeState.initial()) {
+  HomeBloc(this._getWalletSummary, this._getTransactions)
+    : super(HomeState.initial()) {
     on<HomeStarted>((event, emit) => _loadAll(emit));
     on<HomeRefreshed>(_onRefreshed);
     on<BalanceRetried>((event, emit) => _loadBalance(emit));
@@ -23,16 +24,25 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final GetTransactions _getTransactions;
 
   Future<void> _loadAll(Emitter<HomeState> emit, {bool silent = false}) {
-    return Future.wait([_loadBalance(emit, silent: silent), _loadTransactions(emit, silent: silent)]);
+    return Future.wait([
+      _loadBalance(emit, silent: silent),
+      _loadTransactions(emit, silent: silent),
+    ]);
   }
 
-  Future<void> _onRefreshed(HomeRefreshed event, Emitter<HomeState> emit) async {
+  Future<void> _onRefreshed(
+    HomeRefreshed event,
+    Emitter<HomeState> emit,
+  ) async {
     emit(state.copyWith(isRefreshing: true));
     await _loadAll(emit, silent: true);
     emit(state.copyWith(isRefreshing: false));
   }
 
-  Future<void> _loadBalance(Emitter<HomeState> emit, {bool silent = false}) async {
+  Future<void> _loadBalance(
+    Emitter<HomeState> emit, {
+    bool silent = false,
+  }) async {
     if (!silent) emit(state.copyWith(balance: const BalanceState.loading()));
     final result = await _getWalletSummary(const NoParams());
     result.match(
@@ -41,11 +51,19 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     );
   }
 
-  Future<void> _loadTransactions(Emitter<HomeState> emit, {bool silent = false}) async {
-    if (!silent) emit(state.copyWith(transactions: const TransactionsState.loading()));
-    final result = await _getTransactions(const GetTransactionsParams(page: 1, pageSize: _homePageSize));
+  Future<void> _loadTransactions(
+    Emitter<HomeState> emit, {
+    bool silent = false,
+  }) async {
+    if (!silent) {
+      emit(state.copyWith(transactions: const TransactionsState.loading()));
+    }
+    final result = await _getTransactions(
+      const GetTransactionsParams(page: 1, pageSize: _homePageSize),
+    );
     result.match(
-      (failure) => emit(state.copyWith(transactions: TransactionsState.error(failure))),
+      (failure) =>
+          emit(state.copyWith(transactions: TransactionsState.error(failure))),
       (page) => emit(
         state.copyWith(
           transactions: page.items.isEmpty

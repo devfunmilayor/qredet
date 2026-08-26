@@ -26,7 +26,10 @@ class HomeHttpDataSource implements HomeDataSource {
   }
 
   @override
-  Future<TransactionsPage> getTransactions({required int page, required int pageSize}) async {
+  Future<TransactionsPage> getTransactions({
+    required int page,
+    required int pageSize,
+  }) async {
     final response = await _dio.get<Map<String, dynamic>>(
       '/wallet/transactions',
       queryParameters: {'page': page, 'page_size': pageSize},

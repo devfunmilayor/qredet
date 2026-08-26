@@ -6,20 +6,20 @@ import '../../domain/entities/notification_item.dart';
 
 extension NotificationTypeLabels on NotificationType {
   String title(AppLocalizations l10n) => switch (this) {
-        NotificationType.paymentReceived => l10n.notifTitlePaymentReceived,
-        NotificationType.paymentSent => l10n.notifTitlePaymentSent,
-        NotificationType.upgradeAvailable => l10n.notifTitleUpgradeAvailable,
-        NotificationType.securityAlert => l10n.notifTitleSecurityAlert,
-        NotificationType.weeklySummary => l10n.notifTitleWeeklySummary,
-      };
+    NotificationType.paymentReceived => l10n.notifTitlePaymentReceived,
+    NotificationType.paymentSent => l10n.notifTitlePaymentSent,
+    NotificationType.upgradeAvailable => l10n.notifTitleUpgradeAvailable,
+    NotificationType.securityAlert => l10n.notifTitleSecurityAlert,
+    NotificationType.weeklySummary => l10n.notifTitleWeeklySummary,
+  };
 
   String body(AppLocalizations l10n) => switch (this) {
-        NotificationType.paymentReceived => l10n.notifBodyPaymentReceived,
-        NotificationType.paymentSent => l10n.notifBodyPaymentSent,
-        NotificationType.upgradeAvailable => l10n.notifBodyUpgradeAvailable,
-        NotificationType.securityAlert => l10n.notifBodySecurityAlert,
-        NotificationType.weeklySummary => l10n.notifBodyWeeklySummary,
-      };
+    NotificationType.paymentReceived => l10n.notifBodyPaymentReceived,
+    NotificationType.paymentSent => l10n.notifBodyPaymentSent,
+    NotificationType.upgradeAvailable => l10n.notifBodyUpgradeAvailable,
+    NotificationType.securityAlert => l10n.notifBodySecurityAlert,
+    NotificationType.weeklySummary => l10n.notifBodyWeeklySummary,
+  };
 }
 
 class NotificationTile extends StatelessWidget {
@@ -38,9 +38,19 @@ class NotificationTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Dismissible(
       key: ValueKey(notification.id),
-      direction: notification.isRead ? DismissDirection.endToStart : DismissDirection.horizontal,
-      background: _SwipeBackground(alignStart: true, color: Colors.green, icon: Icons.done_all),
-      secondaryBackground: _SwipeBackground(alignStart: false, color: Colors.redAccent, icon: Icons.delete_outline),
+      direction: notification.isRead
+          ? DismissDirection.endToStart
+          : DismissDirection.horizontal,
+      background: _SwipeBackground(
+        alignStart: true,
+        color: Colors.green,
+        icon: Icons.done_all,
+      ),
+      secondaryBackground: _SwipeBackground(
+        alignStart: false,
+        color: Colors.redAccent,
+        icon: Icons.delete_outline,
+      ),
       confirmDismiss: (direction) async {
         if (direction == DismissDirection.startToEnd) {
           onMarkRead();
@@ -55,7 +65,11 @@ class NotificationTile extends StatelessWidget {
 }
 
 class _SwipeBackground extends StatelessWidget {
-  const _SwipeBackground({required this.alignStart, required this.color, required this.icon});
+  const _SwipeBackground({
+    required this.alignStart,
+    required this.color,
+    required this.icon,
+  });
 
   final bool alignStart;
   final Color color;
@@ -66,7 +80,10 @@ class _SwipeBackground extends StatelessWidget {
     return Container(
       alignment: alignStart ? Alignment.centerLeft : Alignment.centerRight,
       padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
-      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(AppSpacing.md)),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(AppSpacing.md),
+      ),
       child: Icon(icon, color: Colors.white),
     );
   }
@@ -83,7 +100,10 @@ class _NotificationTileContent extends StatelessWidget {
     final locale = Localizations.localeOf(context);
     final l10n = AppLocalizations.of(context);
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: AppSpacing.md, horizontal: AppSpacing.sm),
+      padding: const EdgeInsets.symmetric(
+        vertical: AppSpacing.md,
+        horizontal: AppSpacing.sm,
+      ),
       decoration: BoxDecoration(
         color: notification.isRead ? Colors.transparent : colors.chipBackground,
         borderRadius: BorderRadius.circular(AppSpacing.md),
@@ -94,7 +114,11 @@ class _NotificationTileContent extends StatelessWidget {
           CircleAvatar(
             radius: 20,
             backgroundColor: colors.surfaceAvatar,
-            child: Icon(Icons.notifications_outlined, color: colors.textPrimary, size: 18),
+            child: Icon(
+              Icons.notifications_outlined,
+              color: colors.textPrimary,
+              size: 18,
+            ),
           ),
           const SizedBox(width: AppSpacing.md),
           Expanded(
@@ -103,17 +127,23 @@ class _NotificationTileContent extends StatelessWidget {
               children: [
                 Text(
                   notification.type.title(l10n),
-                  style: AppTextStyles.tileAlias.copyWith(color: colors.textPrimary),
+                  style: AppTextStyles.tileAlias.copyWith(
+                    color: colors.textPrimary,
+                  ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   notification.type.body(l10n),
-                  style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted),
+                  style: AppTextStyles.cardSubtitle.copyWith(
+                    color: colors.textMuted,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   formatTransactionDate(notification.timestamp, locale: locale),
-                  style: AppTextStyles.tileDate.copyWith(color: colors.textMuted),
+                  style: AppTextStyles.tileDate.copyWith(
+                    color: colors.textMuted,
+                  ),
                 ),
               ],
             ),
@@ -123,7 +153,10 @@ class _NotificationTileContent extends StatelessWidget {
               width: 8,
               height: 8,
               margin: const EdgeInsets.only(top: 4),
-              decoration: BoxDecoration(color: colors.primary, shape: BoxShape.circle),
+              decoration: BoxDecoration(
+                color: colors.primary,
+                shape: BoxShape.circle,
+              ),
             ),
         ],
       ),

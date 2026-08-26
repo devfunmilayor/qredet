@@ -10,7 +10,10 @@ class TransactionDetailsSheet extends StatelessWidget {
   final Transaction transaction;
 
   static Future<void> show(BuildContext context, Transaction transaction) {
-    return GlassSheet.show(context, builder: (_) => TransactionDetailsSheet(transaction: transaction));
+    return GlassSheet.show(
+      context,
+      builder: (_) => TransactionDetailsSheet(transaction: transaction),
+    );
   }
 
   @override
@@ -26,9 +29,18 @@ class TransactionDetailsSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           DetailRow(label: l10n.recipient, value: transaction.alias),
-          DetailRow(label: l10n.date, value: formatTransactionDate(transaction.date, locale: locale)),
-          DetailRow(label: l10n.transactionType, value: isDebit ? l10n.debit : l10n.credit),
-          DetailRow(label: l10n.amount, value: '$sign${formatCurrency(transaction.amount, locale: locale)}'),
+          DetailRow(
+            label: l10n.date,
+            value: formatTransactionDate(transaction.date, locale: locale),
+          ),
+          DetailRow(
+            label: l10n.transactionType,
+            value: isDebit ? l10n.debit : l10n.credit,
+          ),
+          DetailRow(
+            label: l10n.amount,
+            value: '$sign${formatCurrency(transaction.amount, locale: locale)}',
+          ),
         ],
       ),
     );

@@ -1,6 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-enum NotificationType { paymentReceived, paymentSent, upgradeAvailable, securityAlert, weeklySummary }
+enum NotificationType {
+  paymentReceived,
+  paymentSent,
+  upgradeAvailable,
+  securityAlert,
+  weeklySummary,
+}
 
 class NotificationItem extends Equatable {
   const NotificationItem({
