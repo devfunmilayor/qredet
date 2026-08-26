@@ -6,7 +6,7 @@ A Flutter wallet app I put together for a technical assessment. Wallet dashboard
 
 ![demo](docs/demo/qredet-demo.gif)
 
-Full-length screen recording: [docs/demo/qredet-demo-video.mov](docs/demo/qredet-demo-video.mov)
+Full-length screen recording: [docs/demo/qredet-demo-video.mov](docs/demo/qredet-demo-video.mov) — also on [Google Drive](https://drive.google.com/file/d/1y3mEo9xIJguuNa6TLbfW9X8932DhXbLS/view)
 
 ## How I approached it
 
