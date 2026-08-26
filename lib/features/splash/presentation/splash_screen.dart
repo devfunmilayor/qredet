@@ -24,9 +24,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             Assets.icons.qredetMark
-                .svg(
-                  color: colors.primary,
-                  width: 64, height: 64)
+                .svg(color: colors.primary, width: 64, height: 64)
                 .animate()
                 .fadeIn(duration: 400.ms)
                 .scale(

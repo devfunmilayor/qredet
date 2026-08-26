@@ -24,7 +24,18 @@ class _LoginScreenState extends State<LoginScreen> {
   final _password = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    _email.addListener(_onFieldChanged);
+    _password.addListener(_onFieldChanged);
+  }
+
+  void _onFieldChanged() => setState(() {});
+
+  @override
   void dispose() {
+    _email.removeListener(_onFieldChanged);
+    _password.removeListener(_onFieldChanged);
     _email.dispose();
     _password.dispose();
     super.dispose();
@@ -33,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final canSubmit = _email.text.trim().isNotEmpty && _password.text.trim().isNotEmpty;
     return Scaffold(
       body: SafeArea(
         child: BlocConsumer<AuthBloc, AuthState>(
@@ -58,9 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   PrimaryButton(
                     label: l10n.login,
                     isLoading: isLoading,
-                    onPressed: () => context.read<AuthBloc>().add(
-                          AuthEvent.loginSubmitted(email: _email.text, password: _password.text),
-                        ),
+                    onPressed: canSubmit
+                        ? () => context.read<AuthBloc>().add(
+                              AuthEvent.loginSubmitted(email: _email.text, password: _password.text),
+                            )
+                        : null,
                   ),
                   const SizedBox(height: AppSpacing.md),
                   PrimaryButton(
