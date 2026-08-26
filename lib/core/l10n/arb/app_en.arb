@@ -3,5 +3,13 @@
   "appName": "Qredet",
   "@appName": {
     "description": "Application name"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "selectLanguage": "Select language",
+  "@selectLanguage": {
+    "description": "Language picker sheet title"
   }
 }

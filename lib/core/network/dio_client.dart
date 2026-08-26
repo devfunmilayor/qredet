@@ -2,8 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'error_interceptor.dart';
 
-/// Base URL for the mocked wallet HTTP API. Swap per environment once a
-/// real backend exists; nothing downstream depends on this being live.
+
 const String _baseUrl = 'https://api.qredet.dev';
 
 Dio buildDioClient() {

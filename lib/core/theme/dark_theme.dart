@@ -17,6 +17,6 @@ ThemeData buildDarkTheme() {
     ),
     extensions: [semantic],
     dividerColor: semantic.divider,
-    fontFamily: null,
+    fontFamily: 'Mona Sans',
   );
 }

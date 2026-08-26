@@ -49,3 +49,4 @@ app.*.map.json
 *.g.dart
 *.config.dart
 lib/core/l10n/generated/
+lib/gen/
