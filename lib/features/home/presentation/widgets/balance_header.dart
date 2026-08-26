@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../../core/formatters/currency_formatter.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../core/widgets/tap_scale.dart';
+import 'package:qredet/core/formatters/currency_formatter.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/tap_scale.dart';
 
 class BalanceHeader extends StatefulWidget {
   const BalanceHeader({super.key, required this.balance, required this.label});

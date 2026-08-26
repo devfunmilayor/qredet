@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/entities/app_user.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
 
 part 'auth_state.freezed.dart';
 

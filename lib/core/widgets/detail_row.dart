@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../theme/theme.dart';
+import 'package:qredet/core/theme/theme.dart';
 
 class DetailRow extends StatelessWidget {
   const DetailRow({super.key, required this.label, required this.value});

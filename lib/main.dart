@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:go_router/go_router.dart';
-import 'core/di/injection.dart';
-import 'core/l10n/generated/app_localizations.dart';
-import 'core/theme/theme.dart';
-import 'features/auth/presentation/bloc/auth_bloc.dart';
-import 'features/auth/presentation/bloc/auth_event.dart';
-import 'features/language/presentation/bloc/language_bloc.dart';
-import 'features/language/presentation/bloc/language_event.dart';
-import 'features/language/presentation/bloc/language_state.dart';
+import 'package:qredet/core/di/injection.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_event.dart';
+import 'package:qredet/features/language/presentation/bloc/language_bloc.dart';
+import 'package:qredet/features/language/presentation/bloc/language_event.dart';
+import 'package:qredet/features/language/presentation/bloc/language_state.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

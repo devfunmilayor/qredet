@@ -1,9 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../entities/wallet_summary.dart';
-import '../repositories/home_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
+import 'package:qredet/features/home/domain/repositories/home_repository.dart';
 
 @lazySingleton
 class GetWalletSummary implements UseCase<WalletSummary, NoParams> {

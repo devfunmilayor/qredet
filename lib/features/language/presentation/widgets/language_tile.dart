@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/theme.dart';
-import '../../domain/entities/language.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
 
 class LanguageTile extends StatelessWidget {
   const LanguageTile({

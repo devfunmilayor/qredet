@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/entities/wallet_summary.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
 
 part 'balance_state.freezed.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/widgets/widgets.dart';
-import '../../data/datasources/upgrade_tier_catalog.dart';
-import 'upgrade_tier_tile.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/home/data/datasources/upgrade_tier_catalog.dart';
+import 'package:qredet/features/home/presentation/widgets/upgrade_tier_tile.dart';
 
 class UpgradeTiersSheet extends StatelessWidget {
   const UpgradeTiersSheet({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/router/app_routes.dart';
-import 'primary_button.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/router/app_routes.dart';
+import 'package:qredet/features/home/presentation/widgets/primary_button.dart';
 
 class MakePaymentButton extends StatefulWidget {
   const MakePaymentButton({super.key});

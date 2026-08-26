@@ -1,9 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/error.dart';
-import '../../domain/entities/app_user.dart';
-import '../../domain/repositories/auth_repository.dart';
-import '../datasources/auth_data_source.dart';
+import 'package:qredet/core/error/error.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
+import 'package:qredet/features/auth/domain/repositories/auth_repository.dart';
+import 'package:qredet/features/auth/data/datasources/auth_data_source.dart';
 
 @LazySingleton(as: AuthRepository)
 class AuthRepositoryImpl implements AuthRepository {

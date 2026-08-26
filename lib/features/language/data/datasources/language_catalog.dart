@@ -1,4 +1,4 @@
-import '../../domain/entities/language.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
 
 const List<Language> supportedLanguages = [
   Language(code: 'en', label: 'English', flagEmoji: '🇬🇧'),

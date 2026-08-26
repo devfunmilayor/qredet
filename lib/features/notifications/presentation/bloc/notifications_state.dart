@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../domain/entities/notification_item.dart';
+import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
 
 part 'notifications_state.freezed.dart';
 

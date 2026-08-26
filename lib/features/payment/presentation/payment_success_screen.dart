@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
-import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/router/app_routes.dart';
-import '../../../core/theme/theme.dart';
-import '../../home/presentation/widgets/primary_button.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/router/app_routes.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/home/presentation/widgets/primary_button.dart';
 
 class PaymentSuccessScreen extends StatelessWidget {
   const PaymentSuccessScreen({super.key});

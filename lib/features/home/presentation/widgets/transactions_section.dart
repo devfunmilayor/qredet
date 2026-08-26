@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/widgets/state_placeholder.dart';
-import '../bloc/home_bloc.dart';
-import '../bloc/home_event.dart';
-import '../bloc/home_state.dart';
-import '../bloc/transactions_state.dart';
-import 'section_header.dart';
-import 'transaction_tile.dart';
-import 'transaction_tile_shimmer.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/app_spacing.dart';
+import 'package:qredet/core/widgets/state_placeholder.dart';
+import 'package:qredet/features/home/presentation/bloc/home_bloc.dart';
+import 'package:qredet/features/home/presentation/bloc/home_event.dart';
+import 'package:qredet/features/home/presentation/bloc/home_state.dart';
+import 'package:qredet/features/home/presentation/bloc/transactions_state.dart';
+import 'package:qredet/features/home/presentation/widgets/section_header.dart';
+import 'package:qredet/features/home/presentation/widgets/transaction_tile.dart';
+import 'package:qredet/features/home/presentation/widgets/transaction_tile_shimmer.dart';
 
 class TransactionsSection extends StatelessWidget {
   const TransactionsSection({super.key, this.onSeeAll});

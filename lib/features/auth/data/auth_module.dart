@@ -1,8 +1,8 @@
 import 'package:injectable/injectable.dart';
-import '../../../core/config/app_config.dart';
-import 'datasources/auth_data_source.dart';
-import 'datasources/auth_firebase_data_source.dart';
-import 'datasources/auth_mock_data_source.dart';
+import 'package:qredet/core/config/app_config.dart';
+import 'package:qredet/features/auth/data/datasources/auth_data_source.dart';
+import 'package:qredet/features/auth/data/datasources/auth_firebase_data_source.dart';
+import 'package:qredet/features/auth/data/datasources/auth_mock_data_source.dart';
 
 @module
 abstract class AuthModule {

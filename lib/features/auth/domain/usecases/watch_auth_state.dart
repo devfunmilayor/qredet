@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
-import '../entities/app_user.dart';
-import '../repositories/auth_repository.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
+import 'package:qredet/features/auth/domain/repositories/auth_repository.dart';
 
 @lazySingleton
 class WatchAuthState {

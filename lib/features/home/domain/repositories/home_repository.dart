@@ -1,7 +1,7 @@
 import 'package:fpdart/fpdart.dart';
-import '../../../../core/error/failure.dart';
-import '../entities/transactions_page.dart';
-import '../entities/wallet_summary.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/home/domain/entities/transactions_page.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
 
 abstract class HomeRepository {
   Future<Either<Failure, WalletSummary>> getWalletSummary();

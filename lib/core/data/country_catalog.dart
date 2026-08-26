@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-import '../../gen/assets.gen.dart';
-import 'country.dart';
+import 'package:qredet/gen/assets.gen.dart';
+import 'package:qredet/core/data/country.dart';
 
 Future<List<Country>> loadCountries() async {
   final raw = await rootBundle.loadString(Assets.data.countries);

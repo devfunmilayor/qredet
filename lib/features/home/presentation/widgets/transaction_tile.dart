@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/formatters/formatters.dart';
-import '../../../../core/theme/theme.dart';
-import '../../domain/entities/transaction.dart';
-import 'transaction_details_sheet.dart';
+import 'package:qredet/core/formatters/formatters.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/home/domain/entities/transaction.dart';
+import 'package:qredet/features/home/presentation/widgets/transaction_details_sheet.dart';
 
 class TransactionTile extends StatelessWidget {
   const TransactionTile({super.key, required this.transaction});

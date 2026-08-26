@@ -1,4 +1,4 @@
-import '../domain/entities/payment_details.dart';
+import 'package:qredet/features/payment/domain/entities/payment_details.dart';
 
 const mockPayment = PaymentDetails(
   recipientName: 'Ada Lovelace',

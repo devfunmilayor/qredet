@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../core/di/injection.dart';
-import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/theme/theme.dart';
-import '../../../core/widgets/widgets.dart';
-import 'bloc/notifications_bloc.dart';
-import 'bloc/notifications_event.dart';
-import 'bloc/notifications_state.dart';
-import 'widgets/notification_tile_shimmer.dart';
-import 'widgets/notifications_list_view.dart';
+import 'package:qredet/core/di/injection.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_bloc.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_event.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_state.dart';
+import 'package:qredet/features/notifications/presentation/widgets/notification_tile_shimmer.dart';
+import 'package:qredet/features/notifications/presentation/widgets/notifications_list_view.dart';
 
 class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});

@@ -1,15 +1,15 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../../domain/entities/app_user.dart';
-import '../../domain/usecases/login.dart';
-import '../../domain/usecases/login_as_guest.dart';
-import '../../domain/usecases/logout.dart';
-import '../../domain/usecases/sign_up.dart';
-import '../../domain/usecases/watch_auth_state.dart';
-import 'auth_event.dart';
-import 'auth_state.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
+import 'package:qredet/features/auth/domain/usecases/login.dart';
+import 'package:qredet/features/auth/domain/usecases/login_as_guest.dart';
+import 'package:qredet/features/auth/domain/usecases/logout.dart';
+import 'package:qredet/features/auth/domain/usecases/sign_up.dart';
+import 'package:qredet/features/auth/domain/usecases/watch_auth_state.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_event.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_state.dart';
 
 @singleton
 class AuthBloc extends Bloc<AuthEvent, AuthState> {

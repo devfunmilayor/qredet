@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../gen/assets.gen.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/gen/assets.gen.dart';
 
 class UpgradeCard extends StatelessWidget {
   const UpgradeCard({

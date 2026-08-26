@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../core/widgets/widgets.dart';
-import '../../domain/entities/virtual_account.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/home/domain/entities/virtual_account.dart';
 
 class VirtualAccountChip extends StatelessWidget {
   const VirtualAccountChip({super.key, required this.account});

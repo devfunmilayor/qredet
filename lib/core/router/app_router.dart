@@ -1,18 +1,18 @@
 import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
-import '../../features/auth/presentation/bloc/auth_bloc.dart';
-import '../../features/auth/presentation/bloc/auth_state.dart';
-import '../../features/auth/presentation/login_screen.dart';
-import '../../features/auth/presentation/sign_up_screen.dart';
-import '../../features/home/presentation/home_screen.dart';
-import '../../features/notifications/presentation/notifications_screen.dart';
-import '../../features/payment/presentation/payment_details_screen.dart';
-import '../../features/payment/presentation/payment_success_screen.dart';
-import '../../features/splash/presentation/splash_screen.dart';
-import '../../features/transactions/presentation/transactions_page.dart';
-import 'app_routes.dart';
-import 'go_router_refresh_stream.dart';
-import 'splash_gate.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:qredet/features/auth/presentation/bloc/auth_state.dart';
+import 'package:qredet/features/auth/presentation/login_screen.dart';
+import 'package:qredet/features/auth/presentation/sign_up_screen.dart';
+import 'package:qredet/features/home/presentation/home_screen.dart';
+import 'package:qredet/features/notifications/presentation/notifications_screen.dart';
+import 'package:qredet/features/payment/presentation/payment_details_screen.dart';
+import 'package:qredet/features/payment/presentation/payment_success_screen.dart';
+import 'package:qredet/features/splash/presentation/splash_screen.dart';
+import 'package:qredet/features/transactions/presentation/transactions_page.dart';
+import 'package:qredet/core/router/app_routes.dart';
+import 'package:qredet/core/router/go_router_refresh_stream.dart';
+import 'package:qredet/core/router/splash_gate.dart';
 
 GoRouter buildRouter(AuthBloc authBloc, SplashGate splashGate) {
   return GoRouter(

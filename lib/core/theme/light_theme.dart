@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
-import 'app_semantic_colors.dart';
+import 'package:qredet/core/theme/app_colors.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
 
 ThemeData buildLightTheme() {
   final semantic = AppSemanticColors.light();

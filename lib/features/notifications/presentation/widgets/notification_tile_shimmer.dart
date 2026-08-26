@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../core/widgets/widgets.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/widgets.dart';
 
 class NotificationTileShimmer extends StatelessWidget {
   const NotificationTileShimmer({super.key, this.count = 5});

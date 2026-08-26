@@ -1,3 +1,3 @@
-export 'exception_mapper.dart';
-export 'failure.dart';
-export 'failure_message.dart';
+export 'package:qredet/core/error/exception_mapper.dart';
+export 'package:qredet/core/error/failure.dart';
+export 'package:qredet/core/error/failure_message.dart';

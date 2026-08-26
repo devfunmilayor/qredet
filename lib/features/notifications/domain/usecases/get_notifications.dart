@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../entities/notifications_page.dart';
-import '../repositories/notifications_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/notifications/domain/entities/notifications_page.dart';
+import 'package:qredet/features/notifications/domain/repositories/notifications_repository.dart';
 
 class GetNotificationsParams extends Equatable {
   const GetNotificationsParams({required this.page, required this.pageSize});

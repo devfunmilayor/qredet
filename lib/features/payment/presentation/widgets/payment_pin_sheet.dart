@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../core/widgets/widgets.dart';
-import '../../../home/presentation/widgets/primary_button.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/home/presentation/widgets/primary_button.dart';
 
 const _pinLength = 4;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../../core/theme/app_semantic_colors.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
 
 class NotificationBell extends StatelessWidget {
   const NotificationBell({super.key, this.hasUnread = false, this.onTap});
