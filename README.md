@@ -2,6 +2,12 @@
 
 A Flutter wallet app I put together for a technical assessment. Wallet dashboard, language switching, a transactions list, notifications, and a payment flow with PIN confirmation — the kind of screens you'd expect from a fintech app, minus any money actually moving anywhere.
 
+## Demo
+
+![demo](docs/demo/qredet-demo.gif)
+
+Full-length screen recording: [docs/demo/qredet-demo-video.mov](docs/demo/qredet-demo-video.mov)
+
 ## How I approached it
 
 I went feature-first rather than layer-first, so `lib/features/<name>` each has its own `domain / data / presentation` split. It's more files up front, but it means a feature can be deleted, rewritten, or handed to someone else without them needing to understand the rest of the app first.
