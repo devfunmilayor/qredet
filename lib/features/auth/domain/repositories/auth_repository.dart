@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
-import '../../../../core/error/failure.dart';
-import '../entities/app_user.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
 
 abstract class AuthRepository {
   Future<Either<Failure, AppUser>> login({

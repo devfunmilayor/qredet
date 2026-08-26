@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/widgets/glass_sheet.dart';
-import '../bloc/language_bloc.dart';
-import '../bloc/language_event.dart';
-import '../bloc/language_state.dart';
-import 'language_tile.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/widgets/glass_sheet.dart';
+import 'package:qredet/features/language/presentation/bloc/language_bloc.dart';
+import 'package:qredet/features/language/presentation/bloc/language_event.dart';
+import 'package:qredet/features/language/presentation/bloc/language_state.dart';
+import 'package:qredet/features/language/presentation/widgets/language_tile.dart';
 
 class LanguageSheet extends StatelessWidget {
   const LanguageSheet({super.key});

@@ -1,12 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../../domain/usecases/get_transactions.dart';
-import '../../domain/usecases/get_wallet_summary.dart';
-import 'balance_state.dart';
-import 'home_event.dart';
-import 'home_state.dart';
-import 'transactions_state.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/home/domain/usecases/get_transactions.dart';
+import 'package:qredet/features/home/domain/usecases/get_wallet_summary.dart';
+import 'package:qredet/features/home/presentation/bloc/balance_state.dart';
+import 'package:qredet/features/home/presentation/bloc/home_event.dart';
+import 'package:qredet/features/home/presentation/bloc/home_state.dart';
+import 'package:qredet/features/home/presentation/bloc/transactions_state.dart';
 
 const _homePageSize = 8;
 

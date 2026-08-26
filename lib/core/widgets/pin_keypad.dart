@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../theme/theme.dart';
+import 'package:qredet/core/theme/theme.dart';
 
 const _keypadRows = [
   ['1', '2', '3'],

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../domain/entities/language.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
 
 part 'language_state.freezed.dart';
 

@@ -1,2 +1,2 @@
-export 'dio_client.dart';
-export 'error_interceptor.dart';
+export 'package:qredet/core/network/dio_client.dart';
+export 'package:qredet/core/network/error_interceptor.dart';

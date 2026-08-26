@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/theme.dart';
-import '../../domain/entities/upgrade_tier.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/home/domain/entities/upgrade_tier.dart';
 
 extension UpgradeTierLabels on UpgradeTierType {
   String name(AppLocalizations l10n) => switch (this) {

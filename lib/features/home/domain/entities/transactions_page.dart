@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'transaction.dart';
+import 'package:qredet/features/home/domain/entities/transaction.dart';
 
 class TransactionsPage extends Equatable {
   const TransactionsPage({required this.items, required this.hasMore});

@@ -1,9 +1,9 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import '../l10n/generated/app_localizations.dart';
-import '../theme/app_semantic_colors.dart';
-import '../theme/app_spacing.dart';
-import '../theme/app_text_styles.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
+import 'package:qredet/core/theme/app_spacing.dart';
+import 'package:qredet/core/theme/app_text_styles.dart';
 
 class GlassSheet extends StatelessWidget {
   const GlassSheet({

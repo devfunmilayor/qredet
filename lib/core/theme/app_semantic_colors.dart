@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
+import 'package:qredet/core/theme/app_colors.dart';
 
 class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
   const AppSemanticColors({

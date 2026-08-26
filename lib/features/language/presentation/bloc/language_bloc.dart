@@ -1,11 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../../domain/usecases/get_languages.dart';
-import '../../domain/usecases/get_selected_language.dart';
-import '../../domain/usecases/set_language.dart';
-import 'language_event.dart';
-import 'language_state.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/language/domain/usecases/get_languages.dart';
+import 'package:qredet/features/language/domain/usecases/get_selected_language.dart';
+import 'package:qredet/features/language/domain/usecases/set_language.dart';
+import 'package:qredet/features/language/presentation/bloc/language_event.dart';
+import 'package:qredet/features/language/presentation/bloc/language_state.dart';
 
 @injectable
 class LanguageBloc extends Bloc<LanguageEvent, LanguageState> {

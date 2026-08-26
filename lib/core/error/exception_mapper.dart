@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'failure.dart';
+import 'package:qredet/core/error/failure.dart';
 
 Failure mapExceptionToFailure(Object error) {
   if (error is DioException) return _mapDioException(error);

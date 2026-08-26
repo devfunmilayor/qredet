@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../entities/transactions_page.dart';
-import '../repositories/home_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/home/domain/entities/transactions_page.dart';
+import 'package:qredet/features/home/domain/repositories/home_repository.dart';
 
 class GetTransactionsParams extends Equatable {
   const GetTransactionsParams({required this.page, required this.pageSize});

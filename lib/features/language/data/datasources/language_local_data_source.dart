@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
-import '../../domain/entities/language.dart';
-import 'language_catalog.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
+import 'package:qredet/features/language/data/datasources/language_catalog.dart';
 
 const _settingsKey = 'selected_language_code';
 

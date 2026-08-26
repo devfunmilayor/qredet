@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'virtual_account.dart';
+import 'package:qredet/features/home/domain/entities/virtual_account.dart';
 
 class WalletSummary extends Equatable {
   const WalletSummary({required this.balance, required this.virtualAccount});

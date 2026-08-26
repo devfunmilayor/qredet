@@ -1,9 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../entities/language.dart';
-import '../repositories/language_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
+import 'package:qredet/features/language/domain/repositories/language_repository.dart';
 
 @lazySingleton
 class GetSelectedLanguage implements UseCase<Language, NoParams> {

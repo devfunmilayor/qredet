@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'balance_state.dart';
-import 'transactions_state.dart';
+import 'package:qredet/features/home/presentation/bloc/balance_state.dart';
+import 'package:qredet/features/home/presentation/bloc/transactions_state.dart';
 
 part 'home_state.freezed.dart';
 

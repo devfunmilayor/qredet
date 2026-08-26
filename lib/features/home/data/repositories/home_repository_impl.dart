@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/error.dart';
-import '../../domain/entities/transactions_page.dart';
-import '../../domain/entities/wallet_summary.dart';
-import '../../domain/repositories/home_repository.dart';
-import '../datasources/home_data_source.dart';
+import 'package:qredet/core/error/error.dart';
+import 'package:qredet/features/home/domain/entities/transactions_page.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
+import 'package:qredet/features/home/domain/repositories/home_repository.dart';
+import 'package:qredet/features/home/data/datasources/home_data_source.dart';
 
 @LazySingleton(as: HomeRepository)
 class HomeRepositoryImpl implements HomeRepository {

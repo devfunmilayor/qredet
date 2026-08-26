@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/widgets/state_placeholder.dart';
-import '../../../home/presentation/widgets/transaction_tile.dart';
-import '../bloc/transactions_list_bloc.dart';
-import '../bloc/transactions_list_event.dart';
-import '../bloc/transactions_list_state.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/widgets/state_placeholder.dart';
+import 'package:qredet/features/home/presentation/widgets/transaction_tile.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_bloc.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_event.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_state.dart';
 
 class TransactionsListView extends StatefulWidget {
   const TransactionsListView({super.key, required this.state});

@@ -1,4 +1,4 @@
-import '../../domain/entities/upgrade_tier.dart';
+import 'package:qredet/features/home/domain/entities/upgrade_tier.dart';
 
 const List<UpgradeTier> upgradeTiers = [
   UpgradeTier(type: UpgradeTierType.basic),

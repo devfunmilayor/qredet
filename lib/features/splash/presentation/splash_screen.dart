@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../core/theme/app_semantic_colors.dart';
-import '../../../gen/assets.gen.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
+import 'package:qredet/gen/assets.gen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

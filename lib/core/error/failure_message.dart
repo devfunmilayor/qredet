@@ -1,4 +1,4 @@
-import 'failure.dart';
+import 'package:qredet/core/error/failure.dart';
 
 extension FailureMessage on Failure {
   String get userMessage => switch (this) {

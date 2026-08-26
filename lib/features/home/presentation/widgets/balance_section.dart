@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/theme.dart';
-import '../../../../core/widgets/state_placeholder.dart';
-import '../bloc/balance_state.dart';
-import '../bloc/home_bloc.dart';
-import '../bloc/home_event.dart';
-import '../bloc/home_state.dart';
-import 'balance_header.dart';
-import 'balance_shimmer.dart';
-import 'virtual_account_chip.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/core/widgets/state_placeholder.dart';
+import 'package:qredet/features/home/presentation/bloc/balance_state.dart';
+import 'package:qredet/features/home/presentation/bloc/home_bloc.dart';
+import 'package:qredet/features/home/presentation/bloc/home_event.dart';
+import 'package:qredet/features/home/presentation/bloc/home_state.dart';
+import 'package:qredet/features/home/presentation/widgets/balance_header.dart';
+import 'package:qredet/features/home/presentation/widgets/balance_shimmer.dart';
+import 'package:qredet/features/home/presentation/widgets/virtual_account_chip.dart';
 
 class BalanceSection extends StatelessWidget {
   const BalanceSection({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/formatters/formatters.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/widgets/widgets.dart';
-import '../../domain/entities/transaction.dart';
+import 'package:qredet/core/formatters/formatters.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/home/domain/entities/transaction.dart';
 
 class TransactionDetailsSheet extends StatelessWidget {
   const TransactionDetailsSheet({super.key, required this.transaction});

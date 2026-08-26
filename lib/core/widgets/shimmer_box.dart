@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../theme/app_semantic_colors.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
 
 class ShimmerBox extends StatefulWidget {
   const ShimmerBox({

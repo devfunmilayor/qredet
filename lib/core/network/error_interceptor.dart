@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import '../error/exception_mapper.dart';
+import 'package:qredet/core/error/exception_mapper.dart';
 
 class ErrorInterceptor extends Interceptor {
   @override

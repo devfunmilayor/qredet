@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'notification_item.dart';
+import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
 
 class NotificationsPage extends Equatable {
   const NotificationsPage({required this.items, required this.hasMore});

@@ -1,8 +1,8 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
-import '../repositories/auth_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/core/usecase/usecase.dart';
+import 'package:qredet/features/auth/domain/repositories/auth_repository.dart';
 
 @lazySingleton
 class Logout implements UseCase<Unit, NoParams> {

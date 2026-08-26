@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import '../../domain/entities/transaction.dart';
-import '../../domain/entities/transactions_page.dart';
-import '../../domain/entities/virtual_account.dart';
-import '../../domain/entities/wallet_summary.dart';
-import 'home_data_source.dart';
+import 'package:qredet/features/home/domain/entities/transaction.dart';
+import 'package:qredet/features/home/domain/entities/transactions_page.dart';
+import 'package:qredet/features/home/domain/entities/virtual_account.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
+import 'package:qredet/features/home/data/datasources/home_data_source.dart';
 
 @lazySingleton
 class HomeHttpDataSource implements HomeDataSource {

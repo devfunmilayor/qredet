@@ -1,4 +1,4 @@
-import '../../domain/entities/app_user.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
 
 abstract class AuthDataSource {
   Future<AppUser> login({required String email, required String password});

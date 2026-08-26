@@ -1,5 +1,5 @@
-import '../../domain/entities/transactions_page.dart';
-import '../../domain/entities/wallet_summary.dart';
+import 'package:qredet/features/home/domain/entities/transactions_page.dart';
+import 'package:qredet/features/home/domain/entities/wallet_summary.dart';
 
 abstract class HomeDataSource {
   Future<WalletSummary> getWalletSummary();

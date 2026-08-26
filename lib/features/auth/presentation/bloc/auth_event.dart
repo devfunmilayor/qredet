@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../domain/entities/app_user.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
 
 part 'auth_event.freezed.dart';
 

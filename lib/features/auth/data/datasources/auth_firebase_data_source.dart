@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart' as fb;
 import 'package:injectable/injectable.dart';
-import '../../domain/entities/app_user.dart';
-import 'auth_data_source.dart';
+import 'package:qredet/features/auth/domain/entities/app_user.dart';
+import 'package:qredet/features/auth/data/datasources/auth_data_source.dart';
 
 @lazySingleton
 class AuthFirebaseDataSource implements AuthDataSource {

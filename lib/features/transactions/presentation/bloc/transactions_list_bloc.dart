@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../../home/domain/usecases/get_transactions.dart';
-import 'transactions_list_event.dart';
-import 'transactions_list_state.dart';
+import 'package:qredet/features/home/domain/usecases/get_transactions.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_event.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_state.dart';
 
 const _pageSize = 15;
 

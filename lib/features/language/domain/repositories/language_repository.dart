@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
-import '../../../../core/error/failure.dart';
-import '../entities/language.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/language/domain/entities/language.dart';
 
 abstract class LanguageRepository {
   Future<Either<Failure, List<Language>>> getLanguages();

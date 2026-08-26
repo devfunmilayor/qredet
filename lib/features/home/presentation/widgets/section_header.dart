@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../../../core/theme/theme.dart';
+import 'package:qredet/core/theme/theme.dart';
 
 class SectionHeader extends StatelessWidget {
   const SectionHeader({

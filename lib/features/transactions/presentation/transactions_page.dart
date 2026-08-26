@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../core/di/injection.dart';
-import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/theme/app_spacing.dart';
-import '../../../core/widgets/widgets.dart';
-import '../../home/presentation/widgets/transaction_tile_shimmer.dart';
-import 'bloc/transactions_list_bloc.dart';
-import 'bloc/transactions_list_event.dart';
-import 'bloc/transactions_list_state.dart';
-import 'widgets/transactions_list_view.dart';
+import 'package:qredet/core/di/injection.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/app_spacing.dart';
+import 'package:qredet/core/widgets/widgets.dart';
+import 'package:qredet/features/home/presentation/widgets/transaction_tile_shimmer.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_bloc.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_event.dart';
+import 'package:qredet/features/transactions/presentation/bloc/transactions_list_state.dart';
+import 'package:qredet/features/transactions/presentation/widgets/transactions_list_view.dart';
 
 class TransactionsPage extends StatelessWidget {
   const TransactionsPage({super.key});

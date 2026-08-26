@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/formatters/formatters.dart';
-import '../../../../core/l10n/generated/app_localizations.dart';
-import '../../../../core/theme/theme.dart';
-import '../../domain/entities/notification_item.dart';
+import 'package:qredet/core/formatters/formatters.dart';
+import 'package:qredet/core/l10n/generated/app_localizations.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
 
 extension NotificationTypeLabels on NotificationType {
   String title(AppLocalizations l10n) => switch (this) {

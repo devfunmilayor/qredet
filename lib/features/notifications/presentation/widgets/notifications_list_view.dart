@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/theme/theme.dart';
-import '../bloc/notifications_bloc.dart';
-import '../bloc/notifications_event.dart';
-import '../bloc/notifications_state.dart';
-import 'notification_tile.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_bloc.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_event.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_state.dart';
+import 'package:qredet/features/notifications/presentation/widgets/notification_tile.dart';
 
 class NotificationsListView extends StatefulWidget {
   const NotificationsListView({super.key, required this.state});

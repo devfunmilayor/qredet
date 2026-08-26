@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/theme/theme.dart';
-import '../bloc/language_bloc.dart';
-import '../bloc/language_state.dart';
-import 'language_sheet.dart';
+import 'package:qredet/core/theme/theme.dart';
+import 'package:qredet/features/language/presentation/bloc/language_bloc.dart';
+import 'package:qredet/features/language/presentation/bloc/language_state.dart';
+import 'package:qredet/features/language/presentation/widgets/language_sheet.dart';
 
 class LanguagePill extends StatelessWidget {
   const LanguagePill({super.key});

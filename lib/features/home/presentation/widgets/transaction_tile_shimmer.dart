@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/widgets/shimmer_box.dart';
+import 'package:qredet/core/theme/app_spacing.dart';
+import 'package:qredet/core/widgets/shimmer_box.dart';
 
 class TransactionTileShimmer extends StatelessWidget {
   const TransactionTileShimmer({super.key, this.count = 4});

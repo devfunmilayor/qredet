@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../theme/app_semantic_colors.dart';
-import 'app_text_field.dart';
+import 'package:qredet/core/theme/app_semantic_colors.dart';
+import 'package:qredet/core/widgets/app_text_field.dart';
 
 class SearchField extends StatelessWidget {
   const SearchField({

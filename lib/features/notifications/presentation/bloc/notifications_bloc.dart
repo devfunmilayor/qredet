@@ -1,11 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../domain/entities/notification_item.dart';
-import '../../domain/usecases/delete_notification.dart';
-import '../../domain/usecases/get_notifications.dart';
-import '../../domain/usecases/mark_notification_read.dart';
-import 'notifications_event.dart';
-import 'notifications_state.dart';
+import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
+import 'package:qredet/features/notifications/domain/usecases/delete_notification.dart';
+import 'package:qredet/features/notifications/domain/usecases/get_notifications.dart';
+import 'package:qredet/features/notifications/domain/usecases/mark_notification_read.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_event.dart';
+import 'package:qredet/features/notifications/presentation/bloc/notifications_state.dart';
 
 const _pageSize = 8;
 

@@ -1,9 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/entities/notification_item.dart';
-import '../../domain/entities/notifications_page.dart';
-import '../../domain/repositories/notifications_repository.dart';
+import 'package:qredet/core/error/failure.dart';
+import 'package:qredet/features/notifications/domain/entities/notification_item.dart';
+import 'package:qredet/features/notifications/domain/entities/notifications_page.dart';
+import 'package:qredet/features/notifications/domain/repositories/notifications_repository.dart';
 
 @LazySingleton(as: NotificationsRepository)
 class NotificationsRepositoryImpl implements NotificationsRepository {
