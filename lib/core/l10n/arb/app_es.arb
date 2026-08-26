@@ -46,5 +46,16 @@
   "date": "Fecha",
   "transactionType": "Tipo",
   "debit": "Débito",
-  "credit": "Crédito"
+  "credit": "Crédito",
+  "notifTitlePaymentReceived": "Pago recibido",
+  "notifBodyPaymentReceived": "Recibiste un pago en tu billetera",
+  "notifTitlePaymentSent": "Pago enviado",
+  "notifBodyPaymentSent": "Tu pago se envió correctamente",
+  "notifTitleUpgradeAvailable": "Actualización disponible",
+  "notifBodyUpgradeAvailable": "Actualiza a Premium para eliminar los límites de transacciones",
+  "notifTitleSecurityAlert": "Alerta de seguridad",
+  "notifBodySecurityAlert": "Se detectó un nuevo inicio de sesión en tu cuenta",
+  "notifTitleWeeklySummary": "Resumen semanal",
+  "notifBodyWeeklySummary": "Aquí tienes tu resumen de gastos de la semana",
+  "ubaBank": "UBA Bank"
 }

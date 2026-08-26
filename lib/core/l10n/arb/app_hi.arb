@@ -46,5 +46,16 @@
   "date": "तारीख़",
   "transactionType": "प्रकार",
   "debit": "डेबिट",
-  "credit": "क्रेडिट"
+  "credit": "क्रेडिट",
+  "notifTitlePaymentReceived": "भुगतान प्राप्त हुआ",
+  "notifBodyPaymentReceived": "आपके वॉलेट में भुगतान प्राप्त हुआ",
+  "notifTitlePaymentSent": "भुगतान भेजा गया",
+  "notifBodyPaymentSent": "आपका भुगतान सफलतापूर्वक भेजा गया",
+  "notifTitleUpgradeAvailable": "अपग्रेड उपलब्ध है",
+  "notifBodyUpgradeAvailable": "लेनदेन सीमाएं हटाने के लिए प्रीमियम में अपग्रेड करें",
+  "notifTitleSecurityAlert": "सुरक्षा चेतावनी",
+  "notifBodySecurityAlert": "आपके खाते में एक नई लॉगिन का पता चला",
+  "notifTitleWeeklySummary": "साप्ताहिक सारांश",
+  "notifBodyWeeklySummary": "यह इस सप्ताह का आपका खर्च सारांश है",
+  "ubaBank": "UBA Bank"
 }

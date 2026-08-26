@@ -1,7 +1,26 @@
 import 'package:flutter/material.dart';
 import '../../../../core/formatters/formatters.dart';
+import '../../../../core/l10n/generated/app_localizations.dart';
 import '../../../../core/theme/theme.dart';
 import '../../domain/entities/notification_item.dart';
+
+extension NotificationTypeLabels on NotificationType {
+  String title(AppLocalizations l10n) => switch (this) {
+        NotificationType.paymentReceived => l10n.notifTitlePaymentReceived,
+        NotificationType.paymentSent => l10n.notifTitlePaymentSent,
+        NotificationType.upgradeAvailable => l10n.notifTitleUpgradeAvailable,
+        NotificationType.securityAlert => l10n.notifTitleSecurityAlert,
+        NotificationType.weeklySummary => l10n.notifTitleWeeklySummary,
+      };
+
+  String body(AppLocalizations l10n) => switch (this) {
+        NotificationType.paymentReceived => l10n.notifBodyPaymentReceived,
+        NotificationType.paymentSent => l10n.notifBodyPaymentSent,
+        NotificationType.upgradeAvailable => l10n.notifBodyUpgradeAvailable,
+        NotificationType.securityAlert => l10n.notifBodySecurityAlert,
+        NotificationType.weeklySummary => l10n.notifBodyWeeklySummary,
+      };
+}
 
 class NotificationTile extends StatelessWidget {
   const NotificationTile({
@@ -62,6 +81,7 @@ class _NotificationTileContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = context.colors;
     final locale = Localizations.localeOf(context);
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(vertical: AppSpacing.md, horizontal: AppSpacing.sm),
       decoration: BoxDecoration(
@@ -81,9 +101,15 @@ class _NotificationTileContent extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(notification.title, style: AppTextStyles.tileAlias.copyWith(color: colors.textPrimary)),
+                Text(
+                  notification.type.title(l10n),
+                  style: AppTextStyles.tileAlias.copyWith(color: colors.textPrimary),
+                ),
                 const SizedBox(height: 2),
-                Text(notification.body, style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted)),
+                Text(
+                  notification.type.body(l10n),
+                  style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted),
+                ),
                 const SizedBox(height: 4),
                 Text(
                   formatTransactionDate(notification.timestamp, locale: locale),

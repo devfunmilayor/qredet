@@ -46,5 +46,16 @@
   "date": "Data",
   "transactionType": "Tipo",
   "debit": "Débito",
-  "credit": "Crédito"
+  "credit": "Crédito",
+  "notifTitlePaymentReceived": "Pagamento recebido",
+  "notifBodyPaymentReceived": "Você recebeu um pagamento em sua carteira",
+  "notifTitlePaymentSent": "Pagamento enviado",
+  "notifBodyPaymentSent": "Seu pagamento foi enviado com sucesso",
+  "notifTitleUpgradeAvailable": "Atualização disponível",
+  "notifBodyUpgradeAvailable": "Atualize para o Premium para remover os limites de transação",
+  "notifTitleSecurityAlert": "Alerta de segurança",
+  "notifBodySecurityAlert": "Um novo login em sua conta foi detectado",
+  "notifTitleWeeklySummary": "Resumo semanal",
+  "notifBodyWeeklySummary": "Aqui está o resumo dos seus gastos da semana",
+  "ubaBank": "UBA Bank"
 }

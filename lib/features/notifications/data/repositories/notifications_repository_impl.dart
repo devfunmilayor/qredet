@@ -5,15 +5,6 @@ import '../../domain/entities/notification_item.dart';
 import '../../domain/entities/notifications_page.dart';
 import '../../domain/repositories/notifications_repository.dart';
 
-const _titles = ['Payment received', 'Payment sent', 'Upgrade available', 'Security alert', 'Weekly summary'];
-const _bodies = [
-  'You received a payment into your wallet',
-  'Your payment was sent successfully',
-  'Upgrade to Premium to remove transaction limits',
-  'A new login to your account was detected',
-  'Here is your spending summary for the week',
-];
-
 @LazySingleton(as: NotificationsRepository)
 class NotificationsRepositoryImpl implements NotificationsRepository {
   NotificationsRepositoryImpl() : _items = List.generate(26, _mockNotificationAt);
@@ -23,8 +14,7 @@ class NotificationsRepositoryImpl implements NotificationsRepository {
   static NotificationItem _mockNotificationAt(int index) {
     return NotificationItem(
       id: 'notif_$index',
-      title: _titles[index % _titles.length],
-      body: _bodies[index % _bodies.length],
+      type: NotificationType.values[index % NotificationType.values.length],
       timestamp: DateTime(2025, 5, 21, 16, 1).subtract(Duration(hours: index * 7)),
       isRead: index % 3 == 0,
     );
@@ -51,8 +41,7 @@ class NotificationsRepositoryImpl implements NotificationsRepository {
     if (index != -1) {
       _items[index] = NotificationItem(
         id: _items[index].id,
-        title: _items[index].title,
-        body: _items[index].body,
+        type: _items[index].type,
         timestamp: _items[index].timestamp,
         isRead: true,
       );

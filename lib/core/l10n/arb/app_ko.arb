@@ -46,5 +46,16 @@
   "date": "날짜",
   "transactionType": "유형",
   "debit": "출금",
-  "credit": "입금"
+  "credit": "입금",
+  "notifTitlePaymentReceived": "결제 수신됨",
+  "notifBodyPaymentReceived": "지갑으로 결제를 받았습니다",
+  "notifTitlePaymentSent": "결제 전송됨",
+  "notifBodyPaymentSent": "결제가 성공적으로 전송되었습니다",
+  "notifTitleUpgradeAvailable": "업그레이드 가능",
+  "notifBodyUpgradeAvailable": "거래 한도를 없애려면 프리미엄으로 업그레이드하세요",
+  "notifTitleSecurityAlert": "보안 경고",
+  "notifBodySecurityAlert": "계정에 새 로그인이 감지되었습니다",
+  "notifTitleWeeklySummary": "주간 요약",
+  "notifBodyWeeklySummary": "이번 주 지출 요약입니다",
+  "ubaBank": "UBA 은행"
 }

@@ -1,7 +1,11 @@
 import 'package:equatable/equatable.dart';
 
 class Language extends Equatable {
-  const Language({required this.code, required this.label, required this.flagEmoji});
+  const Language({
+    required this.code,
+    required this.label,
+    required this.flagEmoji,
+  });
 
   final String code;
 

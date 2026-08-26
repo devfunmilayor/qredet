@@ -66,7 +66,7 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
           items: [
             for (final item in state.items)
               if (item.id == event.id)
-                NotificationItem(id: item.id, title: item.title, body: item.body, timestamp: item.timestamp, isRead: true)
+                NotificationItem(id: item.id, type: item.type, timestamp: item.timestamp, isRead: true)
               else
                 item,
           ],

@@ -46,5 +46,16 @@
   "date": "तारीख",
   "transactionType": "प्रकार",
   "debit": "डेबिट",
-  "credit": "क्रेडिट"
+  "credit": "क्रेडिट",
+  "notifTitlePaymentReceived": "पेमेंट मिळाले",
+  "notifBodyPaymentReceived": "तुमच्या वॉलेटमध्ये पेमेंट मिळाले",
+  "notifTitlePaymentSent": "पेमेंट पाठवले",
+  "notifBodyPaymentSent": "तुमचे पेमेंट यशस्वीरित्या पाठवले गेले",
+  "notifTitleUpgradeAvailable": "अपग्रेड उपलब्ध आहे",
+  "notifBodyUpgradeAvailable": "व्यवहार मर्यादा काढण्यासाठी प्रीमियमवर अपग्रेड करा",
+  "notifTitleSecurityAlert": "सुरक्षा सूचना",
+  "notifBodySecurityAlert": "तुमच्या खात्यात नवीन लॉगिन आढळले",
+  "notifTitleWeeklySummary": "साप्ताहिक सारांश",
+  "notifBodyWeeklySummary": "हा आठवड्याचा तुमचा खर्च सारांश आहे",
+  "ubaBank": "यूबीए बँक"
 }

@@ -175,5 +175,49 @@
   "credit": "Credit",
   "@credit": {
     "description": "Credit transaction type"
+  },
+  "notifTitlePaymentReceived": "Payment received",
+  "@notifTitlePaymentReceived": {
+    "description": "Payment received notification title"
+  },
+  "notifBodyPaymentReceived": "You received a payment into your wallet",
+  "@notifBodyPaymentReceived": {
+    "description": "Payment received notification body"
+  },
+  "notifTitlePaymentSent": "Payment sent",
+  "@notifTitlePaymentSent": {
+    "description": "Payment sent notification title"
+  },
+  "notifBodyPaymentSent": "Your payment was sent successfully",
+  "@notifBodyPaymentSent": {
+    "description": "Payment sent notification body"
+  },
+  "notifTitleUpgradeAvailable": "Upgrade available",
+  "@notifTitleUpgradeAvailable": {
+    "description": "Upgrade available notification title"
+  },
+  "notifBodyUpgradeAvailable": "Upgrade to Premium to remove transaction limits",
+  "@notifBodyUpgradeAvailable": {
+    "description": "Upgrade available notification body"
+  },
+  "notifTitleSecurityAlert": "Security alert",
+  "@notifTitleSecurityAlert": {
+    "description": "Security alert notification title"
+  },
+  "notifBodySecurityAlert": "A new login to your account was detected",
+  "@notifBodySecurityAlert": {
+    "description": "Security alert notification body"
+  },
+  "notifTitleWeeklySummary": "Weekly summary",
+  "@notifTitleWeeklySummary": {
+    "description": "Weekly summary notification title"
+  },
+  "notifBodyWeeklySummary": "Here is your spending summary for the week",
+  "@notifBodyWeeklySummary": {
+    "description": "Weekly summary notification body"
+  },
+  "ubaBank": "UBA Bank",
+  "@ubaBank": {
+    "description": "Mock bank name shown on the virtual account chip and payment details"
   }
 }

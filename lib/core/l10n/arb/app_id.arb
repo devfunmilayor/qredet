@@ -46,5 +46,16 @@
   "date": "Tanggal",
   "transactionType": "Jenis",
   "debit": "Debit",
-  "credit": "Kredit"
+  "credit": "Kredit",
+  "notifTitlePaymentReceived": "Pembayaran diterima",
+  "notifBodyPaymentReceived": "Anda menerima pembayaran ke dompet Anda",
+  "notifTitlePaymentSent": "Pembayaran terkirim",
+  "notifBodyPaymentSent": "Pembayaran Anda berhasil terkirim",
+  "notifTitleUpgradeAvailable": "Peningkatan tersedia",
+  "notifBodyUpgradeAvailable": "Tingkatkan ke Premium untuk menghapus batas transaksi",
+  "notifTitleSecurityAlert": "Peringatan keamanan",
+  "notifBodySecurityAlert": "Login baru ke akun Anda terdeteksi",
+  "notifTitleWeeklySummary": "Ringkasan mingguan",
+  "notifBodyWeeklySummary": "Berikut ringkasan pengeluaran Anda minggu ini",
+  "ubaBank": "UBA Bank"
 }

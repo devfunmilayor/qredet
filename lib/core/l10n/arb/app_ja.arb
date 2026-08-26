@@ -46,5 +46,16 @@
   "date": "日付",
   "transactionType": "種類",
   "debit": "出金",
-  "credit": "入金"
+  "credit": "入金",
+  "notifTitlePaymentReceived": "支払いを受け取りました",
+  "notifBodyPaymentReceived": "ウォレットに支払いを受け取りました",
+  "notifTitlePaymentSent": "支払いを送信しました",
+  "notifBodyPaymentSent": "お支払いが正常に送信されました",
+  "notifTitleUpgradeAvailable": "アップグレードが利用可能です",
+  "notifBodyUpgradeAvailable": "プレミアムにアップグレードして取引制限を解除",
+  "notifTitleSecurityAlert": "セキュリティ警告",
+  "notifBodySecurityAlert": "アカウントへの新しいログインが検出されました",
+  "notifTitleWeeklySummary": "週間サマリー",
+  "notifBodyWeeklySummary": "今週の支出サマリーです",
+  "ubaBank": "UBA銀行"
 }

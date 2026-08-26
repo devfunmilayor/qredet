@@ -18,13 +18,22 @@ class SplashScreen extends StatelessWidget {
             SizedBox(
               width: 108,
               height: 108,
-              child: CircularProgressIndicator(strokeWidth: 3, color: colors.primary),
+              child: CircularProgressIndicator(
+                strokeWidth: 1.5,
+                color: colors.primary,
+              ),
             ),
             Assets.icons.qredetMark
-                .svg(width: 64, height: 64)
+                .svg(
+                  color: colors.primary,
+                  width: 64, height: 64)
                 .animate()
                 .fadeIn(duration: 400.ms)
-                .scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOut),
+                .scale(
+                  begin: const Offset(0.85, 0.85),
+                  end: const Offset(1, 1),
+                  curve: Curves.easeOut,
+                ),
           ],
         ),
       ),

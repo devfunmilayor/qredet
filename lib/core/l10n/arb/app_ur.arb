@@ -46,5 +46,16 @@
   "date": "تاریخ",
   "transactionType": "قسم",
   "debit": "ڈیبٹ",
-  "credit": "کریڈٹ"
+  "credit": "کریڈٹ",
+  "notifTitlePaymentReceived": "ادائیگی موصول ہوئی",
+  "notifBodyPaymentReceived": "آپ کے والیٹ میں ادائیگی موصول ہوئی",
+  "notifTitlePaymentSent": "ادائیگی بھیجی گئی",
+  "notifBodyPaymentSent": "آپ کی ادائیگی کامیابی سے بھیجی گئی",
+  "notifTitleUpgradeAvailable": "اپ گریڈ دستیاب ہے",
+  "notifBodyUpgradeAvailable": "لین دین کی حدیں ہٹانے کے لیے پریمیم میں اپ گریڈ کریں",
+  "notifTitleSecurityAlert": "حفاظتی الرٹ",
+  "notifBodySecurityAlert": "آپ کے اکاؤنٹ میں نیا لاگ ان معلوم ہوا",
+  "notifTitleWeeklySummary": "ہفتہ وار خلاصہ",
+  "notifBodyWeeklySummary": "یہ اس ہفتے کے لیے آپ کے اخراجات کا خلاصہ ہے",
+  "ubaBank": "یو بی اے بینک"
 }

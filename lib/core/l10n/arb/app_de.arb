@@ -46,5 +46,16 @@
   "date": "Datum",
   "transactionType": "Typ",
   "debit": "Belastung",
-  "credit": "Gutschrift"
+  "credit": "Gutschrift",
+  "notifTitlePaymentReceived": "Zahlung erhalten",
+  "notifBodyPaymentReceived": "Sie haben eine Zahlung in Ihrem Wallet erhalten",
+  "notifTitlePaymentSent": "Zahlung gesendet",
+  "notifBodyPaymentSent": "Ihre Zahlung wurde erfolgreich gesendet",
+  "notifTitleUpgradeAvailable": "Upgrade verfügbar",
+  "notifBodyUpgradeAvailable": "Upgraden Sie auf Premium, um Transaktionslimits zu entfernen",
+  "notifTitleSecurityAlert": "Sicherheitswarnung",
+  "notifBodySecurityAlert": "Eine neue Anmeldung bei Ihrem Konto wurde erkannt",
+  "notifTitleWeeklySummary": "Wöchentliche Zusammenfassung",
+  "notifBodyWeeklySummary": "Hier ist Ihre Ausgabenübersicht für diese Woche",
+  "ubaBank": "UBA Bank"
 }

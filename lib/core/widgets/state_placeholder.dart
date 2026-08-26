@@ -22,27 +22,29 @@ class StatePlaceholder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
-    return Padding(
-      padding: const EdgeInsets.all(AppSpacing.xxl),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 32, color: colors.textMuted),
-          const SizedBox(height: AppSpacing.md),
-          Text(title, style: AppTextStyles.stateTitle.copyWith(color: colors.textPrimary)),
-          if (subtitle != null) ...[
-            const SizedBox(height: AppSpacing.xs),
-            Text(
-              subtitle!,
-              textAlign: TextAlign.center,
-              style: AppTextStyles.stateSubtitle.copyWith(color: colors.textMuted),
-            ),
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.xxl),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 32, color: colors.textMuted),
+            const SizedBox(height: AppSpacing.md),
+            Text(title, style: AppTextStyles.stateTitle.copyWith(color: colors.textPrimary)),
+            if (subtitle != null) ...[
+              const SizedBox(height: AppSpacing.xs),
+              Text(
+                subtitle!,
+                textAlign: TextAlign.center,
+                style: AppTextStyles.stateSubtitle.copyWith(color: colors.textMuted),
+              ),
+            ],
+            if (retryLabel != null && onRetry != null) ...[
+              const SizedBox(height: AppSpacing.lg),
+              TextButton(onPressed: onRetry, child: Text(retryLabel!)),
+            ],
           ],
-          if (retryLabel != null && onRetry != null) ...[
-            const SizedBox(height: AppSpacing.lg),
-            TextButton(onPressed: onRetry, child: Text(retryLabel!)),
-          ],
-        ],
+        ),
       ),
     );
   }

@@ -46,5 +46,16 @@
   "date": "তারিখ",
   "transactionType": "ধরন",
   "debit": "ডেবিট",
-  "credit": "ক্রেডিট"
+  "credit": "ক্রেডিট",
+  "notifTitlePaymentReceived": "পেমেন্ট গৃহীত হয়েছে",
+  "notifBodyPaymentReceived": "আপনার ওয়ালেটে একটি পেমেন্ট পেয়েছেন",
+  "notifTitlePaymentSent": "পেমেন্ট পাঠানো হয়েছে",
+  "notifBodyPaymentSent": "আপনার পেমেন্ট সফলভাবে পাঠানো হয়েছে",
+  "notifTitleUpgradeAvailable": "আপগ্রেড উপলব্ধ",
+  "notifBodyUpgradeAvailable": "লেনদেনের সীমা সরাতে প্রিমিয়ামে আপগ্রেড করুন",
+  "notifTitleSecurityAlert": "নিরাপত্তা সতর্কতা",
+  "notifBodySecurityAlert": "আপনার অ্যাকাউন্টে একটি নতুন লগইন সনাক্ত করা হয়েছে",
+  "notifTitleWeeklySummary": "সাপ্তাহিক সারসংক্ষেপ",
+  "notifBodyWeeklySummary": "এই সপ্তাহের জন্য আপনার খরচের সারসংক্ষেপ এখানে",
+  "ubaBank": "ইউবিএ ব্যাংক"
 }

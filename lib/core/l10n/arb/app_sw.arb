@@ -46,5 +46,16 @@
   "date": "Tarehe",
   "transactionType": "Aina",
   "debit": "Malipo",
-  "credit": "Mkopo"
+  "credit": "Mkopo",
+  "notifTitlePaymentReceived": "Malipo yamepokelewa",
+  "notifBodyPaymentReceived": "Umepokea malipo kwenye pochi yako",
+  "notifTitlePaymentSent": "Malipo yametumwa",
+  "notifBodyPaymentSent": "Malipo yako yametumwa kwa mafanikio",
+  "notifTitleUpgradeAvailable": "Uboreshaji unapatikana",
+  "notifBodyUpgradeAvailable": "Boresha hadi Premium ili kuondoa mipaka ya miamala",
+  "notifTitleSecurityAlert": "Tahadhari ya usalama",
+  "notifBodySecurityAlert": "Kuingia kwa akaunti yako kumegunduliwa",
+  "notifTitleWeeklySummary": "Muhtasari wa wiki",
+  "notifBodyWeeklySummary": "Huu hapa muhtasari wa matumizi yako ya wiki",
+  "ubaBank": "Benki ya UBA"
 }

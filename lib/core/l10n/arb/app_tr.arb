@@ -46,5 +46,16 @@
   "date": "Tarih",
   "transactionType": "Tür",
   "debit": "Borç",
-  "credit": "Alacak"
+  "credit": "Alacak",
+  "notifTitlePaymentReceived": "Ödeme alındı",
+  "notifBodyPaymentReceived": "Cüzdanınıza bir ödeme alındı",
+  "notifTitlePaymentSent": "Ödeme gönderildi",
+  "notifBodyPaymentSent": "Ödemeniz başarıyla gönderildi",
+  "notifTitleUpgradeAvailable": "Yükseltme mevcut",
+  "notifBodyUpgradeAvailable": "İşlem sınırlarını kaldırmak için Premium'a yükseltin",
+  "notifTitleSecurityAlert": "Güvenlik uyarısı",
+  "notifBodySecurityAlert": "Hesabınıza yeni bir giriş algılandı",
+  "notifTitleWeeklySummary": "Haftalık özet",
+  "notifBodyWeeklySummary": "İşte bu haftaki harcama özetiniz",
+  "ubaBank": "UBA Bank"
 }
