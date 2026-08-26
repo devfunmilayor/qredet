@@ -42,5 +42,9 @@
   "paymentSuccessful": "பணம் செலுத்துதல் வெற்றி",
   "paymentSuccessMessage": "உங்கள் பணம் அனுப்பப்பட்டது",
   "backToHome": "முகப்புக்குத் திரும்பு",
-  "bankAccount": "வங்கிக் கணக்கு"
+  "bankAccount": "வங்கிக் கணக்கு",
+  "date": "தேதி",
+  "transactionType": "வகை",
+  "debit": "பற்று",
+  "credit": "வரவு"
 }

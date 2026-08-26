@@ -29,23 +29,25 @@ class _AppToastView extends StatelessWidget {
     return Positioned(
       left: AppSpacing.screenHorizontal,
       right: AppSpacing.screenHorizontal,
-      bottom: 96,
-      child: Material(
-        color: Colors.transparent,
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
-          decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(AppSpacing.pillRadius)),
-          child: Text(
-            message,
-            textAlign: TextAlign.center,
-            style: AppTextStyles.buttonLabel.copyWith(color: Colors.white),
-          ),
-        )
-            .animate()
-            .fadeIn(duration: 200.ms)
-            .slideY(begin: 0.3, end: 0, duration: 250.ms, curve: Curves.easeOut)
-            .then(delay: 1700.ms)
-            .fadeOut(duration: 300.ms),
+      top: 96,
+      child: Center(
+        child: Material(
+          color: Colors.transparent,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+            decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(AppSpacing.pillRadius)),
+            child: Text(
+              message,
+              textAlign: TextAlign.center,
+              style: AppTextStyles.buttonLabel.copyWith(color: Colors.white, fontSize: 13),
+            ),
+          )
+              .animate()
+              .fadeIn(duration: 200.ms)
+              .slideY(begin: 0.3, end: 0, duration: 250.ms, curve: Curves.easeOut)
+              .then(delay: 1700.ms)
+              .fadeOut(duration: 300.ms),
+        ),
       ),
     );
   }

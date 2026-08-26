@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/theme.dart';
+import '../theme/theme.dart';
 
-class PaymentDetailRow extends StatelessWidget {
-  const PaymentDetailRow({super.key, required this.label, required this.value});
+class DetailRow extends StatelessWidget {
+  const DetailRow({super.key, required this.label, required this.value});
 
   final String label;
   final String value;

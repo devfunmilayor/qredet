@@ -42,5 +42,9 @@
   "paymentSuccessful": "支付成功",
   "paymentSuccessMessage": "您的付款已发送",
   "backToHome": "返回首页",
-  "bankAccount": "银行账户"
+  "bankAccount": "银行账户",
+  "date": "日期",
+  "transactionType": "类型",
+  "debit": "支出",
+  "credit": "收入"
 }

@@ -42,5 +42,9 @@
   "paymentSuccessful": "भुगतान सफल",
   "paymentSuccessMessage": "आपका भुगतान भेज दिया गया है",
   "backToHome": "होम पर वापस जाएं",
-  "bankAccount": "बैंक खाता"
+  "bankAccount": "बैंक खाता",
+  "date": "तारीख़",
+  "transactionType": "प्रकार",
+  "debit": "डेबिट",
+  "credit": "क्रेडिट"
 }

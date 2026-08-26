@@ -42,5 +42,9 @@
   "paymentSuccessful": "Pembayaran berhasil",
   "paymentSuccessMessage": "Pembayaran Anda telah terkirim",
   "backToHome": "Kembali ke beranda",
-  "bankAccount": "Rekening bank"
+  "bankAccount": "Rekening bank",
+  "date": "Tanggal",
+  "transactionType": "Jenis",
+  "debit": "Debit",
+  "credit": "Kredit"
 }

@@ -42,5 +42,9 @@
   "paymentSuccessful": "Thanh toán thành công",
   "paymentSuccessMessage": "Khoản thanh toán của bạn đã được gửi",
   "backToHome": "Về trang chủ",
-  "bankAccount": "Tài khoản ngân hàng"
+  "bankAccount": "Tài khoản ngân hàng",
+  "date": "Ngày",
+  "transactionType": "Loại",
+  "debit": "Ghi nợ",
+  "credit": "Ghi có"
 }

@@ -42,5 +42,9 @@
   "paymentSuccessful": "Malipo yamefaulu",
   "paymentSuccessMessage": "Malipo yako yametumwa",
   "backToHome": "Rudi nyumbani",
-  "bankAccount": "Akaunti ya benki"
+  "bankAccount": "Akaunti ya benki",
+  "date": "Tarehe",
+  "transactionType": "Aina",
+  "debit": "Malipo",
+  "credit": "Mkopo"
 }

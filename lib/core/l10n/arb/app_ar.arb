@@ -42,5 +42,9 @@
   "paymentSuccessful": "تم الدفع بنجاح",
   "paymentSuccessMessage": "تم إرسال دفعتك",
   "backToHome": "العودة إلى الرئيسية",
-  "bankAccount": "الحساب المصرفي"
+  "bankAccount": "الحساب المصرفي",
+  "date": "التاريخ",
+  "transactionType": "النوع",
+  "debit": "مدين",
+  "credit": "دائن"
 }

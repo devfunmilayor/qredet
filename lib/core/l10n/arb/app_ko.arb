@@ -42,5 +42,9 @@
   "paymentSuccessful": "결제 완료",
   "paymentSuccessMessage": "결제가 전송되었습니다",
   "backToHome": "홈으로 돌아가기",
-  "bankAccount": "은행 계좌"
+  "bankAccount": "은행 계좌",
+  "date": "날짜",
+  "transactionType": "유형",
+  "debit": "출금",
+  "credit": "입금"
 }

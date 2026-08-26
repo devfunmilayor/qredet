@@ -1,31 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../core/di/injection.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/theme/theme.dart';
 import '../../../core/widgets/widgets.dart';
-import '../data/notification_catalog.dart';
-import 'widgets/notification_tile.dart';
+import 'bloc/notifications_bloc.dart';
+import 'bloc/notifications_event.dart';
+import 'bloc/notifications_state.dart';
+import 'widgets/notifications_list_view.dart';
 
 class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (_) => getIt<NotificationsBloc>()..add(const NotificationsEvent.started()),
+      child: const _NotificationsScreenBody(),
+    );
+  }
+}
+
+class _NotificationsScreenBody extends StatelessWidget {
+  const _NotificationsScreenBody();
+
+  @override
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.notifications)),
-      body: notificationCatalog.isEmpty
-          ? StatePlaceholder(icon: Icons.notifications_none, title: l10n.noNotificationsYet)
-          : ListView.builder(
-              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.screenHorizontal, vertical: AppSpacing.md),
-              itemCount: notificationCatalog.length,
-              itemBuilder: (context, index) {
-                return NotificationTile(notification: notificationCatalog[index])
-                    .animate(delay: (40 * index).ms)
-                    .fadeIn(duration: 250.ms)
-                    .slideY(begin: 0.15, end: 0, curve: Curves.easeOut);
-              },
-            ),
+      body: BlocBuilder<NotificationsBloc, NotificationsState>(
+        builder: (context, state) {
+          return switch (state.status) {
+            NotificationsStatus.loading => const Center(child: CircularProgressIndicator()),
+            NotificationsStatus.error => StatePlaceholder(
+                icon: Icons.error_outline,
+                title: l10n.transactionsErrorTitle,
+                subtitle: l10n.tryAgainMessage,
+                retryLabel: l10n.retry,
+                onRetry: () => context.read<NotificationsBloc>().add(const NotificationsEvent.started()),
+              ),
+            NotificationsStatus.loaded when state.items.isEmpty =>
+              StatePlaceholder(icon: Icons.notifications_none, title: l10n.noNotificationsYet),
+            NotificationsStatus.loaded => NotificationsListView(state: state),
+          };
+        },
+      ),
     );
   }
 }
