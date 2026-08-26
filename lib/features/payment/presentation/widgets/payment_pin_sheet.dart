@@ -39,43 +39,43 @@ class _PaymentPinSheetState extends State<PaymentPinSheet> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final colors = context.colors;
     final filled = _controller.text.length;
     return GlassSheet(
       title: l10n.enterPin,
       onCancel: () => Navigator.of(context).pop(),
       child: GestureDetector(
         onTap: () => _focusNode.requestFocus(),
+        behavior: HitTestBehavior.translucent,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(_pinLength, (index) {
-                final isFilled = index < filled;
-                return Container(
-                  width: 16,
-                  height: 16,
-                  margin: const EdgeInsets.symmetric(horizontal: AppSpacing.sm),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: isFilled ? colors.primary : colors.divider,
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(
+                    _pinLength,
+                    (index) => _PinBox(isFilled: index < filled),
                   ),
-                );
-              }),
-            ),
-            Offstage(
-              child: TextField(
-                controller: _controller,
-                focusNode: _focusNode,
-                keyboardType: TextInputType.number,
-                obscureText: true,
-                maxLength: _pinLength,
-                onChanged: (value) {
-                  setState(() {});
-                  if (value.length == _pinLength) widget.onConfirmed();
-                },
-              ),
+                ),
+                SizedBox(
+                  width: 0,
+                  height: 0,
+                  child: TextField(
+                    controller: _controller,
+                    focusNode: _focusNode,
+                    keyboardType: TextInputType.number,
+                    obscureText: true,
+                    maxLength: _pinLength,
+                    showCursor: false,
+                    decoration: const InputDecoration(counterText: '', border: InputBorder.none),
+                    style: const TextStyle(color: Colors.transparent, height: 0.01, fontSize: 0.01),
+                    cursorWidth: 0,
+                    onChanged: (value) => setState(() {}),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: AppSpacing.xxl),
             PrimaryButton(
@@ -85,6 +85,31 @@ class _PaymentPinSheetState extends State<PaymentPinSheet> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _PinBox extends StatelessWidget {
+  const _PinBox({required this.isFilled});
+
+  final bool isFilled;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = context.colors;
+    return Container(
+      width: 48,
+      height: 56,
+      margin: const EdgeInsets.symmetric(horizontal: AppSpacing.sm),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: colors.chipBackground,
+        borderRadius: BorderRadius.circular(AppSpacing.md),
+        border: Border.all(color: isFilled ? colors.primary : colors.divider, width: 1.5),
+      ),
+      child: isFilled
+          ? Container(width: 10, height: 10, decoration: BoxDecoration(color: colors.primary, shape: BoxShape.circle))
+          : null,
     );
   }
 }

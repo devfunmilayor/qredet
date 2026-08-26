@@ -42,5 +42,9 @@
   "paymentSuccessful": "ادائیگی کامیاب",
   "paymentSuccessMessage": "آپ کی ادائیگی بھیج دی گئی ہے",
   "backToHome": "ہوم پر واپس جائیں",
-  "bankAccount": "بینک اکاؤنٹ"
+  "bankAccount": "بینک اکاؤنٹ",
+  "date": "تاریخ",
+  "transactionType": "قسم",
+  "debit": "ڈیبٹ",
+  "credit": "کریڈٹ"
 }

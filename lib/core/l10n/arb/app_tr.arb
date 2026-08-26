@@ -42,5 +42,9 @@
   "paymentSuccessful": "Ödeme başarılı",
   "paymentSuccessMessage": "Ödemeniz gönderildi",
   "backToHome": "Ana sayfaya dön",
-  "bankAccount": "Banka hesabı"
+  "bankAccount": "Banka hesabı",
+  "date": "Tarih",
+  "transactionType": "Tür",
+  "debit": "Borç",
+  "credit": "Alacak"
 }

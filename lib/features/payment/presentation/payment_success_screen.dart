@@ -23,26 +23,37 @@ class PaymentSuccessScreen extends StatelessWidget {
               Container(
                 width: 96,
                 height: 96,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(color: colors.primary, shape: BoxShape.circle),
-                child: const Icon(Icons.check, color: Colors.white, size: 48),
+                child: const Icon(Icons.check, color: Colors.white, size: 48)
+                    .animate(delay: 350.ms)
+                    .scale(
+                      begin: const Offset(0, 0),
+                      end: const Offset(1, 1),
+                      duration: 400.ms,
+                      curve: Curves.elasticOut,
+                    )
+                    .fadeIn(duration: 200.ms),
               ).animate().scale(
                     begin: const Offset(0.4, 0.4),
                     end: const Offset(1, 1),
-                    duration: 450.ms,
-                    curve: Curves.elasticOut,
-                  ),
+                    duration: 400.ms,
+                    curve: Curves.easeOutBack,
+                  ).fadeIn(duration: 250.ms),
               const SizedBox(height: AppSpacing.xxl),
               Text(
                 l10n.paymentSuccessful,
                 style: AppTextStyles.sheetTitle.copyWith(color: colors.textPrimary),
-              ).animate(delay: 300.ms).fadeIn(duration: 300.ms),
+              ).animate(delay: 500.ms).fadeIn(duration: 350.ms).slideY(begin: 0.2, end: 0, curve: Curves.easeOut),
               const SizedBox(height: AppSpacing.xs),
               Text(
                 l10n.paymentSuccessMessage,
                 style: AppTextStyles.cardSubtitle.copyWith(color: colors.textMuted),
-              ).animate(delay: 400.ms).fadeIn(duration: 300.ms),
+              ).animate(delay: 600.ms).fadeIn(duration: 350.ms).slideY(begin: 0.2, end: 0, curve: Curves.easeOut),
               const SizedBox(height: AppSpacing.xxxl),
-              PrimaryButton(label: l10n.backToHome, onPressed: () => context.go(AppRoutes.home)),
+              PrimaryButton(label: l10n.backToHome, onPressed: () => context.go(AppRoutes.home))
+                  .animate(delay: 750.ms)
+                  .fadeIn(duration: 300.ms),
             ],
           ),
         ),

@@ -42,5 +42,9 @@
   "paymentSuccessful": "支払いが完了しました",
   "paymentSuccessMessage": "お支払いが送信されました",
   "backToHome": "ホームに戻る",
-  "bankAccount": "銀行口座"
+  "bankAccount": "銀行口座",
+  "date": "日付",
+  "transactionType": "種類",
+  "debit": "出金",
+  "credit": "入金"
 }

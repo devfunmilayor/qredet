@@ -42,5 +42,9 @@
   "paymentSuccessful": "Zahlung erfolgreich",
   "paymentSuccessMessage": "Ihre Zahlung wurde gesendet",
   "backToHome": "Zurück zur Startseite",
-  "bankAccount": "Bankkonto"
+  "bankAccount": "Bankkonto",
+  "date": "Datum",
+  "transactionType": "Typ",
+  "debit": "Belastung",
+  "credit": "Gutschrift"
 }

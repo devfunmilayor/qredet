@@ -27,8 +27,11 @@ class _TransactionsListViewState extends State<TransactionsListView> {
   }
 
   void _onScroll() {
-    if (_scrollController.position.pixels > _scrollController.position.maxScrollExtent - 200) {
-      context.read<TransactionsListBloc>().add(const TransactionsListEvent.moreRequested());
+    if (_scrollController.position.pixels >
+        _scrollController.position.maxScrollExtent - 200) {
+      context.read<TransactionsListBloc>().add(
+        const TransactionsListEvent.moreRequested(),
+      );
     }
   }
 
@@ -43,7 +46,10 @@ class _TransactionsListViewState extends State<TransactionsListView> {
     final l10n = AppLocalizations.of(context);
     final items = widget.state.visibleItems;
     if (items.isEmpty) {
-      return StatePlaceholder(icon: Icons.search_off, title: l10n.transactionsEmptyTitle);
+      return StatePlaceholder(
+        icon: Icons.search_off,
+        title: l10n.transactionsEmptyTitle,
+      );
     }
     return CustomScrollView(
       controller: _scrollController,
@@ -59,7 +65,10 @@ class _TransactionsListViewState extends State<TransactionsListView> {
         ),
         if (widget.state.isLoadingMore)
           const SliverToBoxAdapter(
-            child: Padding(padding: EdgeInsets.all(24), child: Center(child: CircularProgressIndicator())),
+            child: Padding(
+              padding: EdgeInsets.all(18),
+              child: Center(child: CircularProgressIndicator(strokeWidth: 1)),
+            ),
           ),
       ],
     );

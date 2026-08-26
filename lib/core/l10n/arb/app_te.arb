@@ -42,5 +42,9 @@
   "paymentSuccessful": "చెల్లింపు విజయవంతమైంది",
   "paymentSuccessMessage": "మీ చెల్లింపు పంపబడింది",
   "backToHome": "హోమ్‌కి తిరిగి వెళ్ళండి",
-  "bankAccount": "బ్యాంక్ ఖాతా"
+  "bankAccount": "బ్యాంక్ ఖాతా",
+  "date": "తేదీ",
+  "transactionType": "రకం",
+  "debit": "డెబిట్",
+  "credit": "క్రెడిట్"
 }

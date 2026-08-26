@@ -42,5 +42,9 @@
   "paymentSuccessful": "Платёж выполнен",
   "paymentSuccessMessage": "Ваш платёж отправлен",
   "backToHome": "Назад на главную",
-  "bankAccount": "Банковский счёт"
+  "bankAccount": "Банковский счёт",
+  "date": "Дата",
+  "transactionType": "Тип",
+  "debit": "Списание",
+  "credit": "Зачисление"
 }

@@ -42,5 +42,9 @@
   "paymentSuccessful": "Pagamento concluído",
   "paymentSuccessMessage": "Seu pagamento foi enviado",
   "backToHome": "Voltar ao início",
-  "bankAccount": "Conta bancária"
+  "bankAccount": "Conta bancária",
+  "date": "Data",
+  "transactionType": "Tipo",
+  "debit": "Débito",
+  "credit": "Crédito"
 }

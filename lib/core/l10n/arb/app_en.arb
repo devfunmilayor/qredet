@@ -159,5 +159,21 @@
   "bankAccount": "Bank account",
   "@bankAccount": {
     "description": "Bank account field label"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Date field label"
+  },
+  "transactionType": "Type",
+  "@transactionType": {
+    "description": "Transaction type field label"
+  },
+  "debit": "Debit",
+  "@debit": {
+    "description": "Debit transaction type"
+  },
+  "credit": "Credit",
+  "@credit": {
+    "description": "Credit transaction type"
   }
 }
