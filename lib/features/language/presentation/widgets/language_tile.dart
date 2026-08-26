@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/app_semantic_colors.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/theme.dart';
 import '../../domain/entities/language.dart';
 
 class LanguageTile extends StatelessWidget {

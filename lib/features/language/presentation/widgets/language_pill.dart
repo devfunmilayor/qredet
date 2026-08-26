@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/theme/app_semantic_colors.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/theme.dart';
 import '../bloc/language_bloc.dart';
 import '../bloc/language_state.dart';
 import 'language_sheet.dart';
@@ -28,16 +27,18 @@ class LanguagePill extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(state.selected.flagEmoji, style: const TextStyle(fontSize: 16)),
-                const SizedBox(width: AppSpacing.xs),
+                Text(state.selected.flagEmoji, style: const TextStyle(fontSize: 20)),
+                const SizedBox(width: AppSpacing.sm),
                 Text(
-                  state.selected.code.toUpperCase(),
+                  state.selected.label,
                   style: AppTextStyles.pillLabel.copyWith(color: colors.textPrimary),
                 ),
+                const SizedBox(width: AppSpacing.xs),
+                Icon(Icons.keyboard_arrow_down, color: colors.textMuted, size: 20),
               ],
             ),
           ),
-        );
+        ).animate().fadeIn(duration: 250.ms);
       },
     );
   }

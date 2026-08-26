@@ -26,22 +26,19 @@ class LanguageSheet extends StatelessWidget {
         return GlassSheet(
           title: AppLocalizations.of(context).selectLanguage,
           onCancel: () => Navigator.of(context).pop(),
-          child: Flexible(
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: state.languages.length,
-              itemBuilder: (context, index) {
-                final language = state.languages[index];
-                return LanguageTile(
-                  language: language,
-                  selected: language.code == state.selected.code,
-                  onTap: () {
-                    context.read<LanguageBloc>().add(LanguageEvent.changed(language));
-                    Navigator.of(context).pop();
-                  },
-                );
-              },
-            ),
+          child: ListView.builder(
+            itemCount: state.languages.length,
+            itemBuilder: (context, index) {
+              final language = state.languages[index];
+              return LanguageTile(
+                language: language,
+                selected: language.code == state.selected.code,
+                onTap: () {
+                  context.read<LanguageBloc>().add(LanguageEvent.changed(language));
+                  Navigator.of(context).pop();
+                },
+              );
+            },
           ),
         );
       },
