@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
 import '../../features/auth/presentation/bloc/auth_bloc.dart';
 import '../../features/auth/presentation/bloc/auth_state.dart';
@@ -11,12 +12,13 @@ import '../../features/splash/presentation/splash_screen.dart';
 import '../../features/transactions/presentation/transactions_page.dart';
 import 'app_routes.dart';
 import 'go_router_refresh_stream.dart';
+import 'splash_gate.dart';
 
-GoRouter buildRouter(AuthBloc authBloc) {
+GoRouter buildRouter(AuthBloc authBloc, SplashGate splashGate) {
   return GoRouter(
     initialLocation: AppRoutes.splash,
-    refreshListenable: GoRouterRefreshStream(authBloc.stream),
-    redirect: (context, state) => _redirect(authBloc.state, state.matchedLocation),
+    refreshListenable: Listenable.merge([GoRouterRefreshStream(authBloc.stream), splashGate]),
+    redirect: (context, state) => _redirect(authBloc.state, splashGate.isReady, state.matchedLocation),
     routes: [
       GoRoute(path: AppRoutes.splash, builder: (context, state) => const SplashScreen()),
       GoRoute(path: AppRoutes.login, builder: (context, state) => const LoginScreen()),
@@ -30,10 +32,10 @@ GoRouter buildRouter(AuthBloc authBloc) {
   );
 }
 
-String? _redirect(AuthState authState, String location) {
+String? _redirect(AuthState authState, bool splashReady, String location) {
   final isAuthRoute = location == AppRoutes.login || location == AppRoutes.signUp;
 
-  if (authState is AuthUnknown) {
+  if (authState is AuthUnknown || !splashReady) {
     return location == AppRoutes.splash ? null : AppRoutes.splash;
   }
   if (authState is AuthAuthenticated) {

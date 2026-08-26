@@ -2,6 +2,7 @@ export 'app_text_field.dart';
 export 'app_toast.dart';
 export 'detail_row.dart';
 export 'glass_sheet.dart';
+export 'pin_keypad.dart';
 export 'search_field.dart';
 export 'shimmer_box.dart';
 export 'state_placeholder.dart';

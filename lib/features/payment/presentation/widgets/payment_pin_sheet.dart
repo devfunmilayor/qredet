@@ -20,67 +20,38 @@ class PaymentPinSheet extends StatefulWidget {
 }
 
 class _PaymentPinSheetState extends State<PaymentPinSheet> {
-  final _controller = TextEditingController();
-  final _focusNode = FocusNode();
+  String _pin = '';
 
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _focusNode.requestFocus());
+  void _onDigit(String digit) {
+    if (_pin.length >= _pinLength) return;
+    setState(() => _pin += digit);
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    _focusNode.dispose();
-    super.dispose();
+  void _onBackspace() {
+    if (_pin.isEmpty) return;
+    setState(() => _pin = _pin.substring(0, _pin.length - 1));
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final filled = _controller.text.length;
     return GlassSheet(
       title: l10n.enterPin,
       onCancel: () => Navigator.of(context).pop(),
-      child: GestureDetector(
-        onTap: () => _focusNode.requestFocus(),
-        behavior: HitTestBehavior.translucent,
+      child: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(
-                    _pinLength,
-                    (index) => _PinBox(isFilled: index < filled),
-                  ),
-                ),
-                SizedBox(
-                  width: 0,
-                  height: 0,
-                  child: TextField(
-                    controller: _controller,
-                    focusNode: _focusNode,
-                    keyboardType: TextInputType.number,
-                    obscureText: true,
-                    maxLength: _pinLength,
-                    showCursor: false,
-                    decoration: const InputDecoration(counterText: '', border: InputBorder.none),
-                    style: const TextStyle(color: Colors.transparent, height: 0.01, fontSize: 0.01),
-                    cursorWidth: 0,
-                    onChanged: (value) => setState(() {}),
-                  ),
-                ),
-              ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: List.generate(_pinLength, (index) => _PinBox(isFilled: index < _pin.length)),
             ),
-            const SizedBox(height: AppSpacing.xxl),
+            const SizedBox(height: AppSpacing.xl),
+            PinKeypad(onDigit: _onDigit, onBackspace: _onBackspace),
+            const SizedBox(height: AppSpacing.xl),
             PrimaryButton(
               label: l10n.confirm,
-              onPressed: filled == _pinLength ? widget.onConfirmed : null,
+              onPressed: _pin.length == _pinLength ? widget.onConfirmed : null,
             ),
           ],
         ),
