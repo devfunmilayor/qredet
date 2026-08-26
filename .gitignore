@@ -47,6 +47,7 @@ app.*.map.json
 # Generated code
 *.freezed.dart
 *.g.dart
+*.mocks.dart
 *.config.dart
 lib/core/l10n/generated/
 lib/gen/
