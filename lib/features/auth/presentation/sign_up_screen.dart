@@ -24,7 +24,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final _password = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    _email.addListener(_onFieldChanged);
+    _password.addListener(_onFieldChanged);
+  }
+
+  void _onFieldChanged() => setState(() {});
+
+  @override
   void dispose() {
+    _email.removeListener(_onFieldChanged);
+    _password.removeListener(_onFieldChanged);
     _email.dispose();
     _password.dispose();
     super.dispose();
@@ -33,6 +44,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final canSubmit = _email.text.trim().isNotEmpty && _password.text.trim().isNotEmpty;
     return Scaffold(
       body: SafeArea(
         child: BlocConsumer<AuthBloc, AuthState>(
@@ -58,9 +70,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   PrimaryButton(
                     label: l10n.signUp,
                     isLoading: isLoading,
-                    onPressed: () => context.read<AuthBloc>().add(
-                          AuthEvent.signUpSubmitted(email: _email.text, password: _password.text),
-                        ),
+                    onPressed: canSubmit
+                        ? () => context.read<AuthBloc>().add(
+                              AuthEvent.signUpSubmitted(email: _email.text, password: _password.text),
+                            )
+                        : null,
                   ),
                   const SizedBox(height: AppSpacing.lg),
                   TextButton(
