@@ -30,5 +30,17 @@
   "password": "Пароль",
   "continueAsGuest": "Продолжить как гость",
   "noAccountSignUp": "Нет аккаунта? Зарегистрируйтесь",
-  "haveAccountLogin": "Уже есть аккаунт? Войти"
+  "haveAccountLogin": "Уже есть аккаунт? Войти",
+  "notifications": "Уведомления",
+  "noNotificationsYet": "Пока нет уведомлений",
+  "transactionDetails": "Детали операции",
+  "recipient": "Получатель",
+  "amount": "Сумма",
+  "proceed": "Продолжить",
+  "enterPin": "Введите PIN-код",
+  "confirm": "Подтвердить",
+  "paymentSuccessful": "Платёж выполнен",
+  "paymentSuccessMessage": "Ваш платёж отправлен",
+  "backToHome": "Назад на главную",
+  "bankAccount": "Банковский счёт"
 }

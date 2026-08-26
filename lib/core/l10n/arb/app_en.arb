@@ -111,5 +111,53 @@
   "haveAccountLogin": "Already have an account? Log in",
   "@haveAccountLogin": {
     "description": "Link from sign up to login"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications screen title"
+  },
+  "noNotificationsYet": "No notifications yet",
+  "@noNotificationsYet": {
+    "description": "Notifications empty state"
+  },
+  "transactionDetails": "Transaction details",
+  "@transactionDetails": {
+    "description": "Transaction details screen title"
+  },
+  "recipient": "Recipient",
+  "@recipient": {
+    "description": "Recipient field label"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "description": "Amount field label"
+  },
+  "proceed": "Proceed",
+  "@proceed": {
+    "description": "Proceed button label"
+  },
+  "enterPin": "Enter PIN",
+  "@enterPin": {
+    "description": "PIN sheet title"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button label"
+  },
+  "paymentSuccessful": "Payment successful",
+  "@paymentSuccessful": {
+    "description": "Success screen title"
+  },
+  "paymentSuccessMessage": "Your payment has been sent",
+  "@paymentSuccessMessage": {
+    "description": "Success screen subtitle"
+  },
+  "backToHome": "Back to home",
+  "@backToHome": {
+    "description": "Success screen CTA"
+  },
+  "bankAccount": "Bank account",
+  "@bankAccount": {
+    "description": "Bank account field label"
   }
 }

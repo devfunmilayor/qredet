@@ -30,5 +30,17 @@
   "password": "Şifre",
   "continueAsGuest": "Misafir olarak devam et",
   "noAccountSignUp": "Hesabınız yok mu? Kaydolun",
-  "haveAccountLogin": "Zaten hesabınız var mı? Giriş yapın"
+  "haveAccountLogin": "Zaten hesabınız var mı? Giriş yapın",
+  "notifications": "Bildirimler",
+  "noNotificationsYet": "Henüz bildirim yok",
+  "transactionDetails": "İşlem detayları",
+  "recipient": "Alıcı",
+  "amount": "Tutar",
+  "proceed": "Devam et",
+  "enterPin": "PIN girin",
+  "confirm": "Onayla",
+  "paymentSuccessful": "Ödeme başarılı",
+  "paymentSuccessMessage": "Ödemeniz gönderildi",
+  "backToHome": "Ana sayfaya dön",
+  "bankAccount": "Banka hesabı"
 }

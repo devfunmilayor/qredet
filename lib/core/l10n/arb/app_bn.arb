@@ -30,5 +30,17 @@
   "password": "পাসওয়ার্ড",
   "continueAsGuest": "অতিথি হিসেবে চালিয়ে যান",
   "noAccountSignUp": "অ্যাকাউন্ট নেই? সাইন আপ করুন",
-  "haveAccountLogin": "ইতিমধ্যে অ্যাকাউন্ট আছে? লগ ইন করুন"
+  "haveAccountLogin": "ইতিমধ্যে অ্যাকাউন্ট আছে? লগ ইন করুন",
+  "notifications": "বিজ্ঞপ্তি",
+  "noNotificationsYet": "এখনও কোনো বিজ্ঞপ্তি নেই",
+  "transactionDetails": "লেনদেনের বিবরণ",
+  "recipient": "প্রাপক",
+  "amount": "পরিমাণ",
+  "proceed": "এগিয়ে যান",
+  "enterPin": "পিন লিখুন",
+  "confirm": "নিশ্চিত করুন",
+  "paymentSuccessful": "পেমেন্ট সফল হয়েছে",
+  "paymentSuccessMessage": "আপনার পেমেন্ট পাঠানো হয়েছে",
+  "backToHome": "হোমে ফিরে যান",
+  "bankAccount": "ব্যাংক অ্যাকাউন্ট"
 }

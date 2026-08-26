@@ -30,5 +30,17 @@
   "password": "كلمة المرور",
   "continueAsGuest": "المتابعة كضيف",
   "noAccountSignUp": "ليس لديك حساب؟ أنشئ حسابًا",
-  "haveAccountLogin": "لديك حساب بالفعل؟ سجّل الدخول"
+  "haveAccountLogin": "لديك حساب بالفعل؟ سجّل الدخول",
+  "notifications": "الإشعارات",
+  "noNotificationsYet": "لا توجد إشعارات بعد",
+  "transactionDetails": "تفاصيل المعاملة",
+  "recipient": "المستلم",
+  "amount": "المبلغ",
+  "proceed": "متابعة",
+  "enterPin": "أدخل الرقم السري",
+  "confirm": "تأكيد",
+  "paymentSuccessful": "تم الدفع بنجاح",
+  "paymentSuccessMessage": "تم إرسال دفعتك",
+  "backToHome": "العودة إلى الرئيسية",
+  "bankAccount": "الحساب المصرفي"
 }

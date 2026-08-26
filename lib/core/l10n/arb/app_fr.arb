@@ -30,5 +30,17 @@
   "password": "Mot de passe",
   "continueAsGuest": "Continuer en tant qu'invité",
   "noAccountSignUp": "Pas de compte ? Inscrivez-vous",
-  "haveAccountLogin": "Déjà un compte ? Connectez-vous"
+  "haveAccountLogin": "Déjà un compte ? Connectez-vous",
+  "notifications": "Notifications",
+  "noNotificationsYet": "Aucune notification pour l'instant",
+  "transactionDetails": "Détails de la transaction",
+  "recipient": "Destinataire",
+  "amount": "Montant",
+  "proceed": "Continuer",
+  "enterPin": "Entrez le code PIN",
+  "confirm": "Confirmer",
+  "paymentSuccessful": "Paiement réussi",
+  "paymentSuccessMessage": "Votre paiement a été envoyé",
+  "backToHome": "Retour à l'accueil",
+  "bankAccount": "Compte bancaire"
 }

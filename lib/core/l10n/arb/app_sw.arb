@@ -30,5 +30,17 @@
   "password": "Nenosiri",
   "continueAsGuest": "Endelea kama mgeni",
   "noAccountSignUp": "Huna akaunti? Jisajili",
-  "haveAccountLogin": "Tayari una akaunti? Ingia"
+  "haveAccountLogin": "Tayari una akaunti? Ingia",
+  "notifications": "Arifa",
+  "noNotificationsYet": "Bado hakuna arifa",
+  "transactionDetails": "Maelezo ya muamala",
+  "recipient": "Mpokeaji",
+  "amount": "Kiasi",
+  "proceed": "Endelea",
+  "enterPin": "Weka PIN",
+  "confirm": "Thibitisha",
+  "paymentSuccessful": "Malipo yamefaulu",
+  "paymentSuccessMessage": "Malipo yako yametumwa",
+  "backToHome": "Rudi nyumbani",
+  "bankAccount": "Akaunti ya benki"
 }

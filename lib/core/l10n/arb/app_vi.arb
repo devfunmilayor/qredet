@@ -30,5 +30,17 @@
   "password": "Mật khẩu",
   "continueAsGuest": "Tiếp tục với tư cách khách",
   "noAccountSignUp": "Chưa có tài khoản? Đăng ký",
-  "haveAccountLogin": "Đã có tài khoản? Đăng nhập"
+  "haveAccountLogin": "Đã có tài khoản? Đăng nhập",
+  "notifications": "Thông báo",
+  "noNotificationsYet": "Chưa có thông báo nào",
+  "transactionDetails": "Chi tiết giao dịch",
+  "recipient": "Người nhận",
+  "amount": "Số tiền",
+  "proceed": "Tiếp tục",
+  "enterPin": "Nhập mã PIN",
+  "confirm": "Xác nhận",
+  "paymentSuccessful": "Thanh toán thành công",
+  "paymentSuccessMessage": "Khoản thanh toán của bạn đã được gửi",
+  "backToHome": "Về trang chủ",
+  "bankAccount": "Tài khoản ngân hàng"
 }

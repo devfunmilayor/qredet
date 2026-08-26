@@ -30,5 +30,17 @@
   "password": "Kata sandi",
   "continueAsGuest": "Lanjutkan sebagai tamu",
   "noAccountSignUp": "Belum punya akun? Daftar",
-  "haveAccountLogin": "Sudah punya akun? Masuk"
+  "haveAccountLogin": "Sudah punya akun? Masuk",
+  "notifications": "Notifikasi",
+  "noNotificationsYet": "Belum ada notifikasi",
+  "transactionDetails": "Detail transaksi",
+  "recipient": "Penerima",
+  "amount": "Jumlah",
+  "proceed": "Lanjutkan",
+  "enterPin": "Masukkan PIN",
+  "confirm": "Konfirmasi",
+  "paymentSuccessful": "Pembayaran berhasil",
+  "paymentSuccessMessage": "Pembayaran Anda telah terkirim",
+  "backToHome": "Kembali ke beranda",
+  "bankAccount": "Rekening bank"
 }

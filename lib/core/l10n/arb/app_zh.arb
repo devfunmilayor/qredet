@@ -30,5 +30,17 @@
   "password": "密码",
   "continueAsGuest": "以访客身份继续",
   "noAccountSignUp": "没有账户？注册",
-  "haveAccountLogin": "已有账户？登录"
+  "haveAccountLogin": "已有账户？登录",
+  "notifications": "通知",
+  "noNotificationsYet": "暂无通知",
+  "transactionDetails": "交易详情",
+  "recipient": "收款人",
+  "amount": "金额",
+  "proceed": "继续",
+  "enterPin": "输入密码",
+  "confirm": "确认",
+  "paymentSuccessful": "支付成功",
+  "paymentSuccessMessage": "您的付款已发送",
+  "backToHome": "返回首页",
+  "bankAccount": "银行账户"
 }
