@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-/// Wraps [child] with a press-driven scale-down, released on tap-up. Used
-/// anywhere a plain tap needs tactile feedback beyond an `InkWell` ripple.
 class TapScale extends StatefulWidget {
   const TapScale({super.key, required this.child, required this.onTap});
 

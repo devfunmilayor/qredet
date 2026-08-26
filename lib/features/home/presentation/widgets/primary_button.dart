@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/theme/theme.dart';
 
-/// Pill button with a bevelled bottom edge, matching the "Make payment" CTA.
-/// Reused for section retry actions and, via [isOutlined], secondary
-/// actions like "Continue as guest" — one button, two looks, no
-/// copy-pasted layout.
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
     super.key,

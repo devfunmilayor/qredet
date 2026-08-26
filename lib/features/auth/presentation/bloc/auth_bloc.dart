@@ -11,8 +11,6 @@ import '../../domain/usecases/watch_auth_state.dart';
 import 'auth_event.dart';
 import 'auth_state.dart';
 
-/// Shared app-wide singleton (not a per-injection factory) so go_router's
-/// redirect and every widget reading auth state see the same instance.
 @singleton
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc(this._login, this._signUp, this._loginAsGuest, this._logout, this._watchAuthState)

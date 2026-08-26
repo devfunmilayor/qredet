@@ -3,10 +3,6 @@ import 'package:injectable/injectable.dart';
 import '../../domain/entities/app_user.dart';
 import 'auth_data_source.dart';
 
-/// Reads [fb.FirebaseAuth.instance] lazily per call (not stored as a
-/// constructor field) so constructing this class is safe even before
-/// `Firebase.initializeApp()` has run — only ever touched once
-/// `AppConfig.useMockAuth` is flipped to `false`.
 @lazySingleton
 class AuthFirebaseDataSource implements AuthDataSource {
   const AuthFirebaseDataSource();

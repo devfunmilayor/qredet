@@ -6,9 +6,6 @@ import 'transactions_list_state.dart';
 
 const _pageSize = 15;
 
-/// Powers the "See all" page. Reuses [GetTransactions] from `home`'s domain
-/// layer — `home_mock_data_source.dart` stays the single source of truth
-/// for the 50 mock rows rather than forking a second usecase/repository.
 @injectable
 class TransactionsListBloc extends Bloc<TransactionsListEvent, TransactionsListState> {
   TransactionsListBloc(this._getTransactions) : super(const TransactionsListState()) {

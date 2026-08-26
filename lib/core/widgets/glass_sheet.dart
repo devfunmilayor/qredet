@@ -5,9 +5,6 @@ import '../theme/app_semantic_colors.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_text_styles.dart';
 
-/// Reusable frosted-glass bottom-sheet shell: blurred backdrop, rounded
-/// top corners, a title, and a trailing Cancel button. Callers supply the
-/// body; this widget owns the chrome so every sheet in the app looks alike.
 class GlassSheet extends StatelessWidget {
   const GlassSheet({super.key, required this.title, required this.child, required this.onCancel});
 

@@ -6,8 +6,6 @@ part 'auth_state.freezed.dart';
 
 @freezed
 sealed class AuthState with _$AuthState {
-  /// Before the first [WatchAuthState] emission arrives — go_router keeps
-  /// the splash route up while in this state.
   const factory AuthState.unknown() = AuthUnknown;
   const factory AuthState.unauthenticated() = AuthUnauthenticated;
   const factory AuthState.authenticating() = AuthAuthenticating;

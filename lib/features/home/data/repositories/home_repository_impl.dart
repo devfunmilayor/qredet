@@ -31,8 +31,6 @@ class HomeRepositoryImpl implements HomeRepository {
     }
   }
 
-  /// [ErrorInterceptor] already maps Dio errors onto `DioException.error`;
-  /// reuse that instead of re-deriving it from `error.type`.
   Failure _toFailure(Object error) {
     if (error is DioException && error.error is Failure) return error.error as Failure;
     return mapExceptionToFailure(error);

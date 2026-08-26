@@ -47,10 +47,6 @@ class AuthMockDataSource implements AuthDataSource {
     _emit(null);
   }
 
-  /// A plain broadcast stream only delivers events to listeners already
-  /// subscribed when `add` fires — a fresh subscriber (e.g. on cold start)
-  /// would never see the current auth state. `Stream.multi` seeds each new
-  /// listener with [_currentUser] before forwarding future changes.
   @override
   Stream<AppUser?> authStateChanges() {
     return Stream.multi((controller) {

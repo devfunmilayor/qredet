@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
 
-/// A dialing-code entry for the Auth phone-number field's country picker.
 class Country extends Equatable {
   const Country({
     required this.name,
